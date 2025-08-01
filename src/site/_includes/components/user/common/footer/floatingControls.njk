@@ -1,0 +1,101 @@
+<!-- 浮动控制栏：固定在页面右下角 -->
+<aside id="floating-control">
+    <!-- 1. 返回主页 -->
+    <a href="https://www.mlosun.com" target="_blank" title="返回主页">
+        <i icon-name="castle" aria-hidden="true"></i>
+    </a>
+
+    <!-- 2. 查看源码 -->
+    <a href="https://github.com/mlosun/Obsidian_Digital_Garden" title="查看源码" target="_blank">
+        <i icon-name="github" aria-hidden="true"></i>
+    </a>
+
+    <!-- 3. 主题切换按钮（light / dark / auto） -->
+    <span id="theme-switch" title="切换主题">
+        <i class="svg-icon light" icon-name="sun"   aria-hidden="true"></i> <!-- 亮色图标 -->
+        <i class="svg-icon dark"  icon-name="moon"  aria-hidden="true"></i> <!-- 暗色图标 -->
+        <i class="svg-icon auto"  icon-name="sun-moon" aria-hidden="true"></i> <!-- 自动图标 -->
+    </span>
+
+    <!-- 4. 一键发邮件（自动填充主题和正文） -->
+    <a title="发起讨论" id="emailme"
+       href="mailto:mlosun@qq.com?subject=关于《{{title}}》&body=正在讨论：{{meta.siteBaseUrl}}{{permalink}}">
+        <i icon-name="mail-plus" aria-hidden="true"></i>
+    </a>
+</aside>
+
+<script>
+/**
+ * 根据当前主题值，切换 <span id="theme-switch"> 上的 CSS 类名，
+ * 从而决定三个图标中哪一个真正显示。
+ * 注：真正隐藏/显示靠的是 CSS，这里只是加/删类名。
+ */
+function setThemeIcon(theme) {
+    let toRemove;   // 需要移除的类名数组
+    switch (theme) {
+        case 'dark':
+            toRemove = ['auto', 'light'];   // 仅保留 dark
+            break;
+        case 'light':
+            toRemove = ['dark', 'auto'];    // 仅保留 light
+            break;
+        default:  // 'auto'
+            toRemove = ['light', 'dark'];   // 仅保留 auto
+            break;
+    }
+    const switcher = document.getElementById('theme-switch');
+    switcher.classList.add(theme);          // 把当前主题作为类名加上
+    switcher.classList.remove(...toRemove); // 移除不需要的类名
+}
+
+/**
+ * 负责把主题真正渲染到页面，同时可选地更新图标。
+ * @param {string} theme  取值 'light' | 'dark' | 'auto'
+ * @param {boolean} setIcon  是否同时调用 setThemeIcon 更新图标
+ */
+function setTheme(theme, setIcon) {
+    if (setIcon) setThemeIcon(theme);   // 先更新图标
+
+    if (theme === 'dark') {
+        document.body.classList.remove('theme-light');
+        document.body.classList.add('theme-dark');
+    } else if (theme === 'light') {
+        document.body.classList.add('theme-light');
+        document.body.classList.remove('theme-dark');
+    } else {
+        // 当 theme === 'auto'，根据系统配色决定
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setTheme(prefersDark ? 'dark' : 'light', false);
+    }
+}
+
+/* ========== 初始化 & 事件监听 ========== */
+
+// 1. 页面初次加载：读 localStorage，没有就用默认 'auto'
+let theme = window.localStorage.getItem('site-theme') || 'auto';
+setTheme(theme, true);      // 渲染主题 & 图标
+window.theme = theme;       // 暴露到全局，方便后续读取
+window.localStorage.setItem('site-theme', theme);
+
+// 2. 监听系统配色变化（仅当用户选的是 auto 时才生效）
+window.matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', () => {
+          const saved = window.localStorage.getItem('site-theme');
+          if (!saved || saved === 'auto') {
+              window.localStorage.setItem('site-theme', 'auto');
+              setTheme('auto', true);
+          }
+      });
+
+// 3. 点击图标循环切换：auto -> dark -> light -> auto ...
+document.getElementById('theme-switch').addEventListener('click', () => {
+    let next;
+    if (window.theme === 'auto') next = 'dark';
+    else if (window.theme === 'dark') next = 'light';
+    else next = 'auto';
+
+    setTheme(next, true);
+    window.localStorage.setItem('site-theme', next);
+    window.theme = next;
+});
+</script>
