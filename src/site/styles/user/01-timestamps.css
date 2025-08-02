@@ -1,0 +1,19 @@
+body {
+    .timestamps {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+        color: var(--text-muted);
+        gap: 10px;
+        margin-top: 20px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            align-items: center;
+        }
+    }
+
+    /* 时间戳样式，横向排列，字体小，颜色柔和，带间距 */
+}

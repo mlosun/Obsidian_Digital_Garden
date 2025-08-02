@@ -1,0 +1,36 @@
+body {
+    .graph {
+        flex: unset !important;
+
+        @media (max-width: 1490px) {
+            display: block !important;
+            order: 3;
+        }
+    }
+
+    /* 图表区域在小屏下变为块级并排在第三位 */
+
+    .toc {
+        @media (max-width: 1490px) {
+            display: block !important;
+        }
+    }
+
+    /* 目录在小屏下强制显示 */
+
+    .sidebar-container {
+        &>div:not(.graph) {
+            width: 320px;
+            max-height: 365px;
+            overflow-y: auto;
+        }
+
+        @media (max-width: 1490px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    /* 侧边栏容器在小屏下换行并左右分布 */
+}
