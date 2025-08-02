@@ -80,60 +80,6 @@ body {
 
     /* 侧边栏容器在小屏下换行并左右分布 */
 
-    nav.filetree-sidebar {
-        top: 85px;
-        left: 20px;
-        position: fixed;
-        height: calc(100% - 160px);
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-        overflow-x: hidden;
-
-        .search-button {
-            margin: 10px;
-            min-width: 160px;
-            margin-bottom: 20px;
-        }
-
-        &>.folder {
-            flex: 1;
-            overflow-y: auto;
-            overflow-x: hidden;
-            margin-right: -10px;
-        }
-
-        .notelink {
-            border-radius: 10px;
-            padding: 5px 0 5px 8px;
-
-            a::before {
-                margin-right: 2px;
-            }
-        }
-
-        .notelink.active-note {
-            transform: unset;
-        }
-
-        .fa-sticky-note {
-            display: none !important;
-        }
-
-        h1::before {
-            content: " ";
-            display: block;
-            width: 100%;
-            height: 3em;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(/img/logo.svg);
-            background-position: center;
-        }
-    }
-
-    /* 左侧文件树导航栏固定定位，带logo背景 */
-
     nav.toc {
         ol {
             list-style: none;

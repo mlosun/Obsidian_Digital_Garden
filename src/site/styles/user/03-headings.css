@@ -1,4 +1,5 @@
 body {
+    /* 一级标题样式，图片32px高 */
     h1 {
         font-size: 2em !important;
 
@@ -9,39 +10,32 @@ body {
         }
     }
 
-    /* 一级标题样式，图片32px高 */
-
+    /* 二级标题字体大小 */
     h2 {
         font-size: 1.5em !important;
         /* 30px/16=1.875em */
     }
 
-    /* 二级标题字体大小 */
-
+    /* 三级标题字体大小 */
     h3 {
         font-size: 1.17em !important;
     }
 
-    /* 三级标题字体大小 */
-
+    /* 四级标题字体大小与加粗 */
     h4 {
         font-size: 1em !important;
         font-weight: bolder !important;
     }
 
-    /* 四级标题字体大小与加粗 */
-
+    /* 五级标题字体大小与加粗 */
     h5 {
         font-size: 0.83em !important;
         font-weight: bolder !important;
     }
 
-    /* 五级标题字体大小与加粗 */
-
+    /* 六级标题字体大小与加粗 */
     h6 {
         font-size: 0.67em !important;
         font-weight: bolder !important;
     }
-
-    /* 六级标题字体大小与加粗 */
 }
