@@ -1,6 +1,6 @@
 /*
- * 标题样式
- * 定义标题（h1 到 h6）的外观，确保大小和强调一致。
+ * 组件样式
+ * 定义标题、表格、浮动控件等组件的样式
  */
 
 body {
@@ -35,15 +35,7 @@ body {
         font-size: 0.67em !important;
         font-weight: bolder !important;
     }
-}
 
-/*
- * Custom Styles
- * This file contains additional custom styles for the application.
- * It should be used sparingly to override or extend existing styles.
- */
-
-body {
     header {
         margin-bottom: 1.8em;
     }

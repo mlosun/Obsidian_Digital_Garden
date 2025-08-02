@@ -1,0 +1,15 @@
+/*
+ * 其他样式
+ * 包含杂项样式和未分类的规则
+ */
+
+body {
+    .shownote {
+        display: block;
+    }
+
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: unset;
+    }
+}

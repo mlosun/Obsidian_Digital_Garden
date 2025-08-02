@@ -1,9 +1,18 @@
 /*
- * 图表、目录和侧边栏样式
- * 定义图表、目录和侧边栏组件的布局和外观。
+ * 布局样式
+ * 包含响应式布局和通用布局规则
  */
 
 body {
+    .notelink {
+        img {
+            height: 16px;
+            width: auto;
+        }
+
+        margin-right: 8px;
+    }
+
     .graph {
         flex: unset !important;
 

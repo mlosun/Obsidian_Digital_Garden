@@ -1,6 +1,6 @@
 /*
  * 文件树样式
- * 定义文件树导航侧边栏的外观和布局。
+ * 定义文件树导航侧边栏的外观和布局
  */
 
 body {
@@ -53,26 +53,6 @@ body {
             background-repeat: no-repeat;
             background-image: url(/img/logo.svg);
             background-position: center;
-        }
-    }
-}
-
-/*
- * 目录导航样式
- * 定义目录导航的外观，左侧带有边框分隔符。
- */
-
-body {
-    nav.toc {
-        ol {
-            list-style: none;
-            padding-left: 10px;
-            border-left: 2px solid var(--background-secondary);
-        }
-
-        &>ol {
-            padding-left: 0;
-            border-left: none;
         }
     }
 }

@@ -1,7 +1,6 @@
 /*
- * 主题变量
- * 此文件定义了暗色和亮色主题的颜色变量。
- * 这些变量用于整个应用程序，以确保主题一致性。
+ * 全局样式
+ * 包含主题变量和基础样式
  */
 
 /* 暗色主题变量 */
@@ -20,12 +19,27 @@ body.theme-light {
     --h1-color: var(--interactive-accent);
 }
 
-/*
- * 通用变量
- * 此文件定义了应用程序中使用的通用变量。
- */
-
+/* 通用变量 */
 body {
     --graph-main: var(--text-accent-hover); /* 图表元素的主颜色 */
     --graph-muted: rgba(126, 126, 126, 0.5); /* 次要图表元素的柔和颜色 */
+}
+
+/* 时间戳样式 */
+body {
+    .timestamps {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+        color: var(--text-muted);
+        gap: 10px;
+        margin-top: 20px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            align-items: center;
+        }
+    }
 }
