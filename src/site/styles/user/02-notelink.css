@@ -1,4 +1,5 @@
 body {
+    /* 笔记链接样式，图标16px高，右侧留8px间距 */
     .notelink {
         img {
             height: 16px;
@@ -7,6 +8,4 @@ body {
 
         margin-right: 8px;
     }
-
-    /* 笔记链接样式，图标16px高，右侧留8px间距 */
 }

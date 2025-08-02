@@ -1,4 +1,5 @@
 body {
+    /* 目录导航样式，左侧边框分隔 */
     nav.toc {
         ol {
             list-style: none;
@@ -11,6 +12,4 @@ body {
             border-left: none;
         }
     }
-
-    /* 目录导航样式，左侧边框分隔 */
 }

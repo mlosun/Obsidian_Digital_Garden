@@ -1,4 +1,5 @@
 body {
+    /* 时间戳样式，横向排列，字体小，颜色柔和，带间距 */
     .timestamps {
         display: flex;
         flex-direction: row;
@@ -14,6 +15,4 @@ body {
             align-items: center;
         }
     }
-
-    /* 时间戳样式，横向排列，字体小，颜色柔和，带间距 */
 }

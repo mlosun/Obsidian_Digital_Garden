@@ -1,4 +1,5 @@
 body {
+    /* 图表区域在小屏下变为块级并排在第三位 */
     .graph {
         flex: unset !important;
 
@@ -8,16 +9,14 @@ body {
         }
     }
 
-    /* 图表区域在小屏下变为块级并排在第三位 */
-
+    /* 目录在小屏下强制显示 */
     .toc {
         @media (max-width: 1490px) {
             display: block !important;
         }
     }
 
-    /* 目录在小屏下强制显示 */
-
+    /* 侧边栏容器在小屏下换行并左右分布 */
     .sidebar-container {
         &>div:not(.graph) {
             width: 320px;
@@ -31,6 +30,4 @@ body {
             justify-content: space-between;
         }
     }
-
-    /* 侧边栏容器在小屏下换行并左右分布 */
 }
