@@ -1,55 +1,35 @@
 /*
- * 工具类样式
- * 包含常用辅助类，可直接在HTML中使用
- * 命名规则：用途-方向-尺寸
+ * 图表、目录和侧边栏样式
+ * 定义图表、目录和侧边栏组件的布局和外观。
  */
 
-// ======================
-// 间距工具
-// ======================
+body {
+    .graph {
+        flex: unset !important;
 
-/* 外边距 */
-.m-0 { margin: 0; }
-.m-1 { margin: 0.25rem; }
-.m-2 { margin: 0.5rem; }
-.m-3 { margin: 1rem; }
+        @media (max-width: 1490px) {
+            display: block !important;
+            order: 3;
+        }
+    }
 
-/* 上边距 */
-.mt-1 { margin-top: 0.25rem; }
-.mt-2 { margin-top: 0.5rem; }
-.mt-3 { margin-top: 1rem; }
+    .toc {
+        @media (max-width: 1490px) {
+            display: block !important;
+        }
+    }
 
-/* 其他方向同理... */
+    .sidebar-container {
+        &>div:not(.graph) {
+            width: 320px;
+            max-height: 365px;
+            overflow-y: auto;
+        }
 
-// ======================
-// 文本工具
-// ======================
-
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-.text-bold { font-weight: bold; }
-.text-muted { color: var(--文本-柔和色); }
-
-// ======================
-// 显示工具
-// ======================
-
-.hidden { display: none; }
-.block { display: block; }
-.flex { display: flex; }
-
-// ======================
-// 弹性布局工具
-// ======================
-
-.flex-row { flex-direction: row; }
-.flex-col { flex-direction: column; }
-.items-center { align-items: center; }
-.justify-center { justify-content: center; }
-
-// ======================
-// 尺寸工具
-// ======================
-
-.w-full { width: 100%; }
-.h-full { height: 100%; }
+        @media (max-width: 1490px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

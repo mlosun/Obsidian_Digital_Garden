@@ -1,81 +1,15 @@
 /*
- * 页面布局样式
- * 包含：
- * 1. 主要页面结构
- * 2. 侧边栏布局
- * 3. 内容区域布局
- * 4. 响应式断点
+ * 笔记链接样式
+ * 定义笔记链接的外观，包括图标和间距。
  */
 
-// ======================
-// 页面主体结构
-// ======================
+body {
+    .notelink {
+        img {
+            height: 16px;
+            width: auto;
+        }
 
-.main-container {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  min-height: 100vh;
-  
-  /* 侧边栏固定在左侧 */
-  .sidebar {
-    position: fixed;
-    width: 250px;
-    height: 100vh;
-    padding: 1rem;
-    background: var(--背景-次色);
-    overflow-y: auto;
-  }
-  
-  /* 主内容区域 */
-  .content {
-    grid-column: 2;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-
-// ======================
-// 文件树导航
-// ======================
-
-.file-tree {
-  /* 文件树容器样式 */
-  position: relative;
-  height: calc(100% - 60px);
-  padding: 0.5rem;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
-  
-  /* 文件项样式 */
-  .file-item {
-    padding: 0.5rem;
-    margin: 0.25rem 0;
-    border-radius: 4px;
-    cursor: pointer;
-    
-    &:hover {
-      background: rgba(255, 255, 255, 0.1);
+        margin-right: 8px;
     }
-  }
-}
-
-// ======================
-// 响应式断点
-// ======================
-
-@media (max-width: 768px) {
-  .main-container {
-    grid-template-columns: 1fr;
-    
-    .sidebar {
-      position: static;
-      width: 100%;
-      height: auto;
-    }
-    
-    .content {
-      grid-column: 1;
-    }
-  }
 }
