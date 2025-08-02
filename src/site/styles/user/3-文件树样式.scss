@@ -4,55 +4,62 @@
  * ================================================ */
 
 body {
+    /* 文件树侧边栏：定义文件树导航的外观和布局 */
     nav.filetree-sidebar {
-        top: 85px;
-        left: 20px;
-        position: fixed;
-        height: calc(100% - 160px);
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-        overflow-x: hidden;
+        top: 85px;                     /* 顶部间距 */
+        left: 20px;                    /* 左侧间距 */
+        position: fixed;               /* 固定定位 */
+        height: calc(100% - 160px);    /* 动态高度计算 */
+        display: flex;                 /* 弹性布局 */
+        flex-direction: column;        /* 纵向排列 */
+        border-radius: 10px;           /* 圆角边框 */
+        overflow-x: hidden;           /* 隐藏横向溢出内容 */
 
+        /* 搜索按钮样式 */
         .search-button {
-            margin: 10px;
-            min-width: 160px;
-            margin-bottom: 20px;
+            margin: 10px;          /* 外边距 */
+            min-width: 160px;     /* 最小宽度 */
+            margin-bottom: 20px;  /* 底部间距 */
         }
 
+        /* 文件夹容器样式：定义文件夹区域的布局和滚动行为 */
         &>.folder {
-            flex: 1;
-            overflow-y: auto;
-            overflow-x: hidden;
-            margin-right: -10px;
+            flex: 1;                /* 弹性填充剩余空间 */
+            overflow-y: auto;      /* 垂直滚动 */
+            overflow-x: hidden;    /* 隐藏横向溢出 */
+            margin-right: -10px;   /* 右侧负边距 */
         }
 
+        /* 笔记链接样式：定义笔记链接的外观和间距 */
         .notelink {
-            border-radius: 10px;
-            padding: 5px 0 5px 8px;
+            border-radius: 10px;     /* 圆角边框 */
+            padding: 5px 0 5px 8px; /* 内边距 */
 
             a::before {
-                margin-right: 2px;
+                margin-right: 2px;  /* 图标右侧间距 */
             }
         }
 
+        /* 活动笔记链接样式：取消变换效果 */
         .notelink.active-note {
-            transform: unset;
+            transform: unset;  /* 取消变换效果 */
         }
 
+        /* 隐藏便签图标 */
         .fa-sticky-note {
-            display: none !important;
+            display: none !important;  /* 隐藏便签图标 */
         }
 
+        /* 标题前的Logo样式 */
         h1::before {
-            content: " ";
-            display: block;
-            width: 100%;
-            height: 3em;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(/img/logo.svg);
-            background-position: center;
+            content: " ";                     /* 伪元素内容 */
+            display: block;                   /* 块级显示 */
+            width: 100%;                       /* 宽度100% */
+            height: 3em;                       /* 固定高度 */
+            background-size: contain;          /* 背景图适应 */
+            background-repeat: no-repeat;      /* 不重复背景 */
+            background-image: url(/img/logo.svg); /* Logo路径 */
+            background-position: center;       /* 居中显示 */
         }
     }
 }

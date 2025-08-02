@@ -4,12 +4,14 @@
  * ================================================ */
 
 body {
+    /* 显示笔记样式：定义笔记的显示方式 */
     .shownote {
-        display: block;
+        display: block;  /* 块级显示 */
     }
 
+    /* 代码块样式：移除文本阴影 */
     code[class*="language-"],
     pre[class*="language-"] {
-        text-shadow: unset;
+        text-shadow: unset;  /* 移除文本阴影 */
     }
 }

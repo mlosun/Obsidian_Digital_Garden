@@ -4,16 +4,17 @@
  * ================================================ */
 
 body {
+    /* 目录侧边栏：定义目录的布局和外观 */
     nav.toc {
         ol {
-            list-style: none;
-            padding-left: 10px;
-            border-left: 2px solid var(--background-secondary);
+            list-style: none;                     /* 移除列表样式 */
+            padding-left: 10px;                  /* 左侧内边距 */
+            border-left: 2px solid var(--background-secondary); /* 左侧边框 */
         }
 
         &>ol {
-            padding-left: 0;
-            border-left: none;
+            padding-left: 0;                      /* 移除内边距 */
+            border-left: none;                   /* 移除边框 */
         }
     }
 }

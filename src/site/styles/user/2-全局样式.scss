@@ -3,20 +3,20 @@
  * 包含主题变量和基础样式
  * ================================================ */
 
-/* 暗色主题变量 */
+/* 暗色主题变量：定义暗色模式下的颜色变量 */
 body.theme-dark {
     --text-accent: #006f8b;       /* 文本的主强调色 */
     --text-accent-hover: #0084a5; /* 悬停状态的强调色 */
     --interactive-accent: #006f8b; /* 交互元素的强调色 */
-    --h1-color: var(--interactive-accent); /* Color for H1 headings */
+    --h1-color: var(--interactive-accent); /* H1标题颜色 */
 }
 
-/* 亮色主题变量 */
+/* 亮色主题变量：定义亮色模式下的颜色变量 */
 body.theme-light {
-    --text-accent: #004d61;
-    --text-accent-hover: #006f8b;
-    --interactive-accent: #004d61;
-    --h1-color: var(--interactive-accent);
+    --text-accent: #004d61;       /* 文本的主强调色 */
+    --text-accent-hover: #006f8b; /* 悬停状态的强调色 */
+    --interactive-accent: #004d61; /* 交互元素的强调色 */
+    --h1-color: var(--interactive-accent); /* H1标题颜色 */
 }
 
 /* 通用变量 */
@@ -25,21 +25,21 @@ body {
     --graph-muted: rgba(126, 126, 126, 0.5); /* 次要图表元素的柔和颜色 */
 }
 
-/* 时间戳样式 */
+/* 时间戳样式：定义时间戳的布局和外观 */
 body {
     .timestamps {
-        display: flex;
-        flex-direction: row;
-        font-size: 0.8em;
-        color: var(--text-muted);
-        gap: 10px;
-        margin-top: 20px;
+        display: flex;              /* 弹性布局 */
+        flex-direction: row;       /* 横向排列 */
+        font-size: 0.8em;          /* 字体大小 */
+        color: var(--text-muted);  /* 文本颜色 */
+        gap: 10px;                 /* 元素间距 */
+        margin-top: 20px;          /* 顶部间距 */
 
         div {
-            display: flex;
-            flex-direction: row;
-            gap: 3px;
-            align-items: center;
+            display: flex;         /* 子元素弹性布局 */
+            flex-direction: row;  /* 横向排列 */
+            gap: 3px;             /* 子元素间距 */
+            align-items: center;  /* 垂直居中 */
         }
     }
 }

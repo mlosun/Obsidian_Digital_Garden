@@ -4,21 +4,23 @@
  * ================================================ */
 
 body {
+    /* 笔记链接样式：定义笔记链接图标大小和间距 */
     .notelink {
         img {
-            height: 16px;
-            width: auto;
+            height: 16px;  /* 图标高度固定为16px */
+            width: auto;   /* 宽度自适应 */
         }
 
-        margin-right: 8px;
+        margin-right: 8px;  /* 右侧间距8px */
     }
 
+    /* 图表容器样式：响应式布局调整 */
     .graph {
-        flex: unset !important;
+        flex: unset !important;  /* 取消flex伸缩 */
 
         @media (max-width: 1490px) {
-            display: block !important;
-            order: 3;
+            display: block !important;  /* 小屏幕下改为块级显示 */
+            order: 3;  /* 调整显示顺序 */
         }
     }
 
@@ -28,17 +30,18 @@ body {
         }
     }
 
+    /* 侧边栏容器：固定宽度和响应式处理 */
     .sidebar-container {
         &>div:not(.graph) {
-            width: 320px;
-            max-height: 365px;
-            overflow-y: auto;
+            width: 320px;  /* 固定宽度 */
+            max-height: 365px;  /* 最大高度限制 */
+            overflow-y: auto;  /* 内容超出时显示滚动条 */
         }
 
         @media (max-width: 1490px) {
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-wrap: wrap;  /* 小屏幕下换行显示 */
+            flex-direction: row;  /* 横向排列 */
+            justify-content: space-between;  /* 两端对齐 */
         }
     }
 }
