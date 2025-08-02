@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/Git 的常用命令.md","permalink":"/08 零散笔记/Git 的常用命令/","created":"2024-10-27","updated":"2024-12-08"}
+{"dg-publish":true,"dg-path":"08 零散笔记/Git 的常用命令.md","permalink":"/08 零散笔记/Git 的常用命令/","noteIcon":"dg-note-icon","created":"2024-10-27","updated":"2024-12-08"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/MacOS 个人目录下文件的作用.md","permalink":"/08 零散笔记/MacOS 个人目录下文件的作用/","created":"2025-07-28","updated":"2025-07-28"}
+{"dg-publish":true,"dg-path":"08 零散笔记/MacOS 个人目录下文件的作用.md","permalink":"/08 零散笔记/MacOS 个人目录下文件的作用/","noteIcon":"dg-note-icon","created":"2025-07-28","updated":"2025-07-28"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Note Specific Settings.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Note Specific Settings/","created":"2022-11-09T22:05:34.872+01:00","updated":"2023-09-25T22:49:09.512+02:00"}
+{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Note Specific Settings.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Note Specific Settings/","noteIcon":"dg-note-icon","created":"2022-11-09T22:05:34.872+01:00","updated":"2023-09-25T22:49:09.512+02:00"}
 ---
 
 

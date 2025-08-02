@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Hosting alternatives.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Hosting alternatives/","created":"2022-11-09T21:23:01.974+01:00","updated":"2023-06-19T13:01:24.117+02:00"}
+{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Hosting alternatives.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Hosting alternatives/","noteIcon":"dg-note-icon","created":"2022-11-09T21:23:01.974+01:00","updated":"2023-06-19T13:01:24.117+02:00"}
 ---
 
 

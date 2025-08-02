@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"01 应用手册/1Panel.md","permalink":"/01 应用手册/1Panel/","created":"2024-12-04","updated":"2024-12-10"}
+{"dg-publish":true,"dg-path":"01 应用手册/1Panel.md","permalink":"/01 应用手册/1Panel/","noteIcon":"dg-note-icon","created":"2024-12-04","updated":"2024-12-10"}
 ---
 
 

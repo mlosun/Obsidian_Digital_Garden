@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/解决Git commit 命令“失效”的异常情况.md","permalink":"/08 零散笔记/解决Git commit 命令“失效”的异常情况/","created":"2025-06-11","updated":"2025-06-11"}
+{"dg-publish":true,"dg-path":"08 零散笔记/解决Git commit 命令“失效”的异常情况.md","permalink":"/08 零散笔记/解决Git commit 命令“失效”的异常情况/","noteIcon":"dg-note-icon","created":"2025-06-11","updated":"2025-06-11"}
 ---
 
 

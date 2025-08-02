@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Content Customization.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Content Customization/","created":"2022-11-09T22:06:14.364+01:00","updated":"2022-11-13T17:09:15.032+01:00"}
+{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Content Customization.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Content Customization/","noteIcon":"dg-note-icon","created":"2022-11-09T22:06:14.364+01:00","updated":"2022-11-13T17:09:15.032+01:00"}
 ---
 
 

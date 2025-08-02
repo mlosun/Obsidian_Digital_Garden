@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/解决 Gitihub 报错 Failed to connect to github.com port 443.md","permalink":"/08 零散笔记/解决 Gitihub 报错 Failed to connect to github.com port 443/","created":"2024-08-20","updated":"2024-08-20"}
+{"dg-publish":true,"dg-path":"08 零散笔记/解决 Gitihub 报错 Failed to connect to github.com port 443.md","permalink":"/08 零散笔记/解决 Gitihub 报错 Failed to connect to github.com port 443/","noteIcon":"dg-note-icon","created":"2024-08-20","updated":"2024-08-20"}
 ---
 
 

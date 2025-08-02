@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"01 应用手册/frp - 群晖Nas内网穿透应用.md","permalink":"/01 应用手册/frp - 群晖Nas内网穿透应用/","created":"2024-12-17","updated":"2024-12-24"}
+{"dg-publish":true,"dg-path":"01 应用手册/frp - 群晖Nas内网穿透应用.md","permalink":"/01 应用手册/frp - 群晖Nas内网穿透应用/","noteIcon":"dg-note-icon","created":"2024-12-17","updated":"2024-12-24"}
 ---
 
 

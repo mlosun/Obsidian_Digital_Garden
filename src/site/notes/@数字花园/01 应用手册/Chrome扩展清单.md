@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"01 应用手册/Chrome扩展清单.md","permalink":"/01 应用手册/Chrome扩展清单/","created":"2024-12-03","updated":"2025-05-06"}
+{"dg-publish":true,"dg-path":"01 应用手册/Chrome扩展清单.md","permalink":"/01 应用手册/Chrome扩展清单/","noteIcon":"dg-note-icon","created":"2024-12-03","updated":"2025-05-06"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/社区插件/✅ 已启用/Auto Link Title.md","permalink":"/09 Obsidian/社区插件/✅ 已启用/Auto Link Title/","created":"2025-04-06","updated":"2025-07-31"}
+{"dg-publish":true,"dg-path":"09 Obsidian/社区插件/✅ 已启用/Auto Link Title.md","permalink":"/09 Obsidian/社区插件/✅ 已启用/Auto Link Title/","noteIcon":"dg-note-icon","created":"2025-04-06","updated":"2025-07-31"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"02 代码编程/Python.md","permalink":"/02 代码编程/Python/","created":"2024-12-01","updated":"2024-12-10"}
+{"dg-publish":true,"dg-path":"02 代码编程/Python.md","permalink":"/02 代码编程/Python/","noteIcon":"dg-note-icon","created":"2024-12-01","updated":"2024-12-10"}
 ---
 
 

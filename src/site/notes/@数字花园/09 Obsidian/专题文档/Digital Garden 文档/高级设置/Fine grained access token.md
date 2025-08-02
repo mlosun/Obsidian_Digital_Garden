@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Fine grained access token.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Fine grained access token/","created":"2022-12-15T22:12:50.110+01:00","updated":"2024-01-17T14:24:27.689+01:00"}
+{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Fine grained access token.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Fine grained access token/","noteIcon":"dg-note-icon","created":"2022-12-15T22:12:50.110+01:00","updated":"2024-01-17T14:24:27.689+01:00"}
 ---
 
 

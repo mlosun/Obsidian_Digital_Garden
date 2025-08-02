@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/Obsidian YAML 属性.md","permalink":"/08 零散笔记/Obsidian YAML 属性/","created":"2023-09-06","updated":"2024-08-05"}
+{"dg-publish":true,"dg-path":"08 零散笔记/Obsidian YAML 属性.md","permalink":"/08 零散笔记/Obsidian YAML 属性/","noteIcon":"dg-note-icon","created":"2023-09-06","updated":"2024-08-05"}
 ---
 
 

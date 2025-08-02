@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"02 代码编程/Linux.md","permalink":"/02 代码编程/Linux/","created":"2024-12-01","updated":"2025-04-22"}
+{"dg-publish":true,"dg-path":"02 代码编程/Linux.md","permalink":"/02 代码编程/Linux/","noteIcon":"dg-note-icon","created":"2024-12-01","updated":"2025-04-22"}
 ---
 
 

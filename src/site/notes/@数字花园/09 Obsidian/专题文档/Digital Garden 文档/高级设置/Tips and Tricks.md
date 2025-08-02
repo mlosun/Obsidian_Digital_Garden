@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Tips and Tricks.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Tips and Tricks/","created":"2022-11-09T22:09:04.283+01:00","updated":"2025-02-10T16:31:09.197+01:00"}
+{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Tips and Tricks.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Tips and Tricks/","noteIcon":"dg-note-icon","created":"2022-11-09T22:09:04.283+01:00","updated":"2025-02-10T16:31:09.197+01:00"}
 ---
 
 

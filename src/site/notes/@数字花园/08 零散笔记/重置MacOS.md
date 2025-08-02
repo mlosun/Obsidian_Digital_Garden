@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/重置MacOS.md","permalink":"/08 零散笔记/重置MacOS/","created":"2024-08-17","updated":"2024-08-17"}
+{"dg-publish":true,"dg-path":"08 零散笔记/重置MacOS.md","permalink":"/08 零散笔记/重置MacOS/","noteIcon":"dg-note-icon","created":"2024-08-17","updated":"2024-08-17"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/Obsidian 插件 Dataview.md","permalink":"/08 零散笔记/Obsidian 插件 Dataview/","created":"2023-10-31","updated":"2025-08-01"}
+{"dg-publish":true,"dg-path":"08 零散笔记/Obsidian 插件 Dataview.md","permalink":"/08 零散笔记/Obsidian 插件 Dataview/","noteIcon":"dg-note-icon","created":"2023-10-31","updated":"2025-08-01"}
 ---
 
 

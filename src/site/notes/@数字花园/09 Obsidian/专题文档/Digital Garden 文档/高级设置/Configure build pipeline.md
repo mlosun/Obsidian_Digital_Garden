@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Configure build pipeline.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Configure build pipeline/","created":"2023-03-09T14:58:29.563+01:00","updated":"2023-03-09T15:03:54.208+01:00"}
+{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Configure build pipeline.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Configure build pipeline/","noteIcon":"dg-note-icon","created":"2023-03-09T14:58:29.563+01:00","updated":"2023-03-09T15:03:54.208+01:00"}
 ---
 
 

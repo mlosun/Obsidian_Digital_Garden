@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/Obsidian Snippets 代码片段.md","permalink":"/08 零散笔记/Obsidian Snippets 代码片段/","created":"2023-09-15","updated":"2024-04-10"}
+{"dg-publish":true,"dg-path":"08 零散笔记/Obsidian Snippets 代码片段.md","permalink":"/08 零散笔记/Obsidian Snippets 代码片段/","noteIcon":"dg-note-icon","created":"2023-09-15","updated":"2024-04-10"}
 ---
 
 
