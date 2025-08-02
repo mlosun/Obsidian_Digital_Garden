@@ -1,24 +1,13 @@
+/*
+ * Custom Styles
+ * This file contains additional custom styles for the application.
+ * It should be used sparingly to override or extend existing styles.
+ */
+
 body {
-
-    // table {
-    //     width: 100% !important;
-    //     border: 1px solid lightgray !important;
-
-    //     td,
-    //     th {
-    //         padding: 5px 10px !important;
-
-    //         hr {
-    //             margin: 5px !important;
-    //         }
-    //     }
-    // }
-
     header {
         margin-bottom: 1.8em;
     }
-
-    /* 页面头部下边距 */
 
     .cm-s-obsidian {
         .table-wrapper {
@@ -35,8 +24,6 @@ body {
             }
         }
     }
-
-    /* 编辑器内表格可横向滚动，图片自适应 */
 
     .cm-s-obsidian>*[id] {
         position: relative;
@@ -64,8 +51,6 @@ body {
         }
     }
 
-    /* 可点击区块悬停提示复制链接 */
-
     .referred {
         border: 1px dashed;
         border-color: var(--text-accent);
@@ -73,8 +58,6 @@ body {
         margin-left: -10px;
         margin-right: -10px;
     }
-
-    /* 被引用区域虚线高亮 */
 
     #floating-control {
         position: fixed;
@@ -128,8 +111,6 @@ body {
         }
     }
 
-    /* 右下角悬浮主题切换控制面板 */
-
     .fnote {
         display: none;
         background-color: var(--background-primary);
@@ -142,8 +123,6 @@ body {
         text-align: center;
         z-index: 999;
     }
-
-    /* 脚注弹出层，默认隐藏 */
 
     .footnote-ref {
         line-height: 85%;
@@ -163,13 +142,9 @@ body {
         }
     }
 
-    /* 脚注引用标记样式 */
-
     .shownote {
         display: block;
     }
-
-    /* 显示脚注弹出层的类 */
 
     #forest-graph {
         display: flex;
@@ -232,13 +207,9 @@ body {
         }
     }
 
-    /* 森林图样式，旋转45度布局 */
-
     .toc-container li::before {
         content: "" !important;
     }
-
-    /* 目录列表项去除伪元素前缀 */
 
     nav.navbar {
         top: 10px;
@@ -275,8 +246,6 @@ body {
             }
         }
     }
-
-    /* 顶部导航栏样式，含logo图标 */
 
     .cards {
         table.dataview {
@@ -322,8 +291,6 @@ body {
         }
     }
 
-    /* 卡片式数据视图样式，隐藏表头 */
-
     .cards-cover-no-border {
         table.dataview.table-view-table {
             tbody {
@@ -335,10 +302,6 @@ body {
                             padding: 0;
                         }
                     }
-
-                    // td:nth-child(2) {
-                    //     min-height: 70px;
-                    // }
 
                     td {
                         svg {
@@ -355,13 +318,10 @@ body {
         }
     }
 
-    /* 无边框卡片样式，图标14px宽 */
-
     .cards-title-hide-icons {
         table.dataview.table-view-table {
             tbody {
                 tr {
-
                     td:nth-child(2),
                     td:first-child {
                         a::before {
@@ -373,185 +333,8 @@ body {
         }
     }
 
-    /* 隐藏卡片视图图标 */
-
     code[class*="language-"],
     pre[class*="language-"] {
         text-shadow: unset;
     }
-
-    /* 代码块去除文字阴影 */
 }
-
-// .callout {
-//     background-color: transparent !important;
-//     border: 1px solid rgba(var(--callout-color), 1) !important;
-//     position: relative;
-//     overflow: visible;
-//     margin-top: calc(1em + 10px);
-
-//     .callout-title {
-//         display: inline-flex;
-//         position: absolute;
-//         top: -10px;
-//         background-color: var(--background-primary);
-//         padding-left: 5px;
-//         padding-right: 5px;
-//     }
-// }
-
-.callout[data-callout="stylish"] {
-    --callout-color: var(--color-purple-rgb);
-    --callout-icon: lucide-brush;
-}
-
-/* 自定义“stylish”提示框样式 */
-
-.callout[data-callout="quote-with-source"] {
-    display: flex;
-    flex-direction: column;
-    --callout-color: var(--bg1);
-    --callout-icon: lucide-minus;
-}
-
-.callout[data-callout="quote-with-source"] .callout-title {
-    order: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-/* 带来源的引用样式，标题放在底部右侧 */
-
-body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="stone"]::before,
-body.filetree-note-icon .filename[data-note-icon="stone"]::before,
-body.links-note-icon .internal-link[data-note-icon="stone"]::before,
-body.backlinks-note-icon .backlink[data-note-icon="stone"]::before {
-    background-image: url(/img/stone.svg);
-}
-
-/* 为“stone”图标添加背景图 */
-
-body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="signpost"]::before,
-body.filetree-note-icon .filename[data-note-icon="signpost"]::before,
-body.links-note-icon .internal-link[data-note-icon="signpost"]::before,
-body.backlinks-note-icon .backlink[data-note-icon="signpost"]::before {
-    background-image: url(/img/signpost.svg);
-}
-
-/* 为“signpost”图标添加背景图 */
-
-body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="withered"]::before,
-body.filetree-note-icon .filename[data-note-icon="withered"]::before,
-body.links-note-icon .internal-link[data-note-icon="withered"]::before,
-body.backlinks-note-icon .backlink[data-note-icon="withered"]::before {
-    background-image: url(/img/withered.svg);
-}
-
-/* 为“withered”图标添加背景图 */
-
-body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="chest"]::before,
-body.filetree-note-icon .filename[data-note-icon="chest"]::before,
-body.links-note-icon .internal-link[data-note-icon="chest"]::before,
-body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
-    background-image: url(/img/chest.svg);
-}
-
-/* 为“chest”图标添加背景图 */
-
-.align-icon {
-    display: inline-flex;
-    align-items: center;
-}
-
-/* 图标与文字垂直居中对齐 */
-
-.pill {
-    background-color: var(--tag-background);
-    border: var(--tag-border-width) solid var(--tag-border-color);
-    border-radius: var(--tag-radius);
-    color: var(--tag-color);
-    font-size: var(--tag-size);
-    text-decoration: var(--tag-decoration);
-    padding: var(--tag-padding-y) var(--tag-padding-x);
-    line-height: 1;
-
-    &:hover {
-        background-color: var(--tag-background-hover);
-        border: var(--tag-border-width) solid var(--tag-border-color-hover);
-        color: var(--tag-color-hover);
-        text-decoration: var(--tag-decoration-hover);
-    }
-}
-
-/* 标签“药丸”样式，带悬停状态 */
-
-.aliases {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-items: center;
-    margin-top: 20px;
-    color: var(--tag-color);
-
-    .heading:only-child {
-        display: none;
-    }
-}
-
-/* 别名显示区域横向排列，隐藏单独标题 */
-
-.header-tags {
-    gap: 5px;
-    display: flex;
-}
-
-/* 头部标签横向排列 */
-
-.fullpage-overlay {
-    position: fixed;
-}
-
-/* 全屏遮罩层固定定位 */
-
-.sidebar {
-    .toc-container {
-        max-height: unset;
-
-        @media (max-width: 1400px) {
-            max-height: 320px;
-        }
-    }
-
-    .backlinks {
-        flex: unset;
-
-        @media (max-width: 1400px) {
-            order: 3;
-        }
-    }
-}
-
-/* 侧边栏内目录与反链在小屏下的响应式调整 */
-
-.tool-links {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100px;
-    font-size: 2rem;
-    border-radius: 10px;
-    border: var(--cards-border-width) solid var(--background-modifier-border);
-    background-color: var(--background-secondary);
-
-    .tool-link {
-        flex: 1;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-}
-
-/* 工具链接横向排列，均分空间，居中 */

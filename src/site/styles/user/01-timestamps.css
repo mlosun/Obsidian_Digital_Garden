@@ -1,5 +1,9 @@
+/*
+ * 时间戳样式
+ * 定义时间戳元素的布局和外观。
+ */
+
 body {
-    /* 时间戳样式，横向排列，字体小，颜色柔和，带间距 */
     .timestamps {
         display: flex;
         flex-direction: row;

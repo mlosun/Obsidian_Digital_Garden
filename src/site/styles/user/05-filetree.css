@@ -1,5 +1,9 @@
+/*
+ * 文件树样式
+ * 定义文件树导航侧边栏的外观和布局。
+ */
+
 body {
-    /* 左侧文件树导航栏固定定位，带logo背景 */
     nav.filetree-sidebar {
         top: 85px;
         left: 20px;

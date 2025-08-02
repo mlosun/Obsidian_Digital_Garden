@@ -1,12 +1,18 @@
-/* 暗色主题下定义的主要颜色变量 */
+/*
+ * 主题变量
+ * 此文件定义了暗色和亮色主题的颜色变量。
+ * 这些变量用于整个应用程序，以确保主题一致性。
+ */
+
+/* 暗色主题变量 */
 body.theme-dark {
-    --text-accent: #006f8b;
-    --text-accent-hover: #0084a5;
-    --interactive-accent: #006f8b;
-    --h1-color: var(--interactive-accent);
+    --text-accent: #006f8b;       /* 文本的主强调色 */
+    --text-accent-hover: #0084a5; /* 悬停状态的强调色 */
+    --interactive-accent: #006f8b; /* 交互元素的强调色 */
+    --h1-color: var(--interactive-accent); /* Color for H1 headings */
 }
 
-/* 亮色主题下定义的主要颜色变量 */
+/* 亮色主题变量 */
 body.theme-light {
     --text-accent: #004d61;
     --text-accent-hover: #006f8b;

@@ -1,5 +1,9 @@
+/*
+ * 图表、目录和侧边栏样式
+ * 定义图表、目录和侧边栏组件的布局和外观。
+ */
+
 body {
-    /* 图表区域在小屏下变为块级并排在第三位 */
     .graph {
         flex: unset !important;
 
@@ -9,14 +13,12 @@ body {
         }
     }
 
-    /* 目录在小屏下强制显示 */
     .toc {
         @media (max-width: 1490px) {
             display: block !important;
         }
     }
 
-    /* 侧边栏容器在小屏下换行并左右分布 */
     .sidebar-container {
         &>div:not(.graph) {
             width: 320px;
