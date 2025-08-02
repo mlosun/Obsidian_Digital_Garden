@@ -1,0 +1,17 @@
+body.theme-dark {
+    --text-accent: #006f8b;
+    --text-accent-hover: #0084a5;
+    --interactive-accent: #006f8b;
+    --h1-color: var(--interactive-accent);
+}
+
+/* 暗色主题下定义的主要颜色变量 */
+
+body.theme-light {
+    --text-accent: #004d61;
+    --text-accent-hover: #006f8b;
+    --interactive-accent: #004d61;
+    --h1-color: var(--interactive-accent);
+}
+
+/* 亮色主题下定义的主要颜色变量 */
