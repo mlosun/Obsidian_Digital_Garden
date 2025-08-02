@@ -31,52 +31,6 @@ body {
 
     /* 笔记链接样式，图标16px高，右侧留8px间距 */
 
-    h1 {
-        font-size: 2em !important;
-
-        /* 40px/16=2.5em */
-        img {
-            height: 32px;
-            width: auto;
-        }
-    }
-
-    /* 一级标题样式，图片32px高 */
-
-    h2 {
-        font-size: 1.5em !important;
-        /* 30px/16=1.875em */
-    }
-
-    /* 二级标题字体大小 */
-
-    h3 {
-        font-size: 1.17em !important;
-    }
-
-    /* 三级标题字体大小 */
-
-    h4 {
-        font-size: 1em !important;
-        font-weight: bolder !important;
-    }
-
-    /* 四级标题字体大小与加粗 */
-
-    h5 {
-        font-size: 0.83em !important;
-        font-weight: bolder !important;
-    }
-
-    /* 五级标题字体大小与加粗 */
-
-    h6 {
-        font-size: 0.67em !important;
-        font-weight: bolder !important;
-    }
-
-    /* 六级标题字体大小与加粗 */
-
     // table {
     //     width: 100% !important;
     //     border: 1px solid lightgray !important;
