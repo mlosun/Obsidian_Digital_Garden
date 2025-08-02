@@ -1,4 +1,45 @@
 <!-- 浮动控制栏：固定在页面右下角 -->
+<style>
+#floating-control {
+    position: fixed;
+    color: var(--link-color);
+    bottom: 1vmax;
+    right: 1vmax;
+    font-size: 24px;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+#floating-control .svg-icon,
+#floating-control i {
+    cursor: pointer;
+    height: 24px;
+    width: auto;
+}
+
+#theme-switch .light,
+#theme-switch .dark,
+#theme-switch .auto {
+    display: none;
+}
+
+#theme-switch.light .light {
+    display: inline;
+}
+
+#theme-switch.dark .dark {
+    display: inline;
+}
+
+#theme-switch.auto .auto {
+    display: inline;
+}
+</style>
+
+<!-- 浮动控制栏：固定在页面右下角 -->
 <aside id="floating-control">
     <!-- 1. 返回主页 -->
     <a href="https://www.mlosun.com" target="_blank" title="返回主页">
