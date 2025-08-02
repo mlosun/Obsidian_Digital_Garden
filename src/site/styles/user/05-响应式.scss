@@ -1,0 +1,57 @@
+/*
+ * 响应式样式
+ * 包含不同屏幕尺寸下的布局调整
+ * 断点参考：
+ * - 手机: <768px
+ * - 平板: 768px~1024px
+ * - 桌面: >1024px
+ */
+
+// ======================
+// 手机端样式
+// ======================
+
+@media (max-width: 767px) {
+  /* 调整主容器为单列布局 */
+  .main-container {
+    grid-template-columns: 1fr;
+    
+    .sidebar {
+      position: static;
+      width: 100%;
+      height: auto;
+      padding: 1rem 0;
+    }
+    
+    .content {
+      padding: 1rem;
+    }
+  }
+  
+  /* 调整文件树为横向滚动 */
+  .file-tree {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    
+    .file-item {
+      min-width: 120px;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+// ======================
+// 平板端样式
+// ======================
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* 调整侧边栏宽度 */
+  .main-container {
+    grid-template-columns: 200px 1fr;
+    
+    .sidebar {
+      width: 200px;
+    }
+  }
+}

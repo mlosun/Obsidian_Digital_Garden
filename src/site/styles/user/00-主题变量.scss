@@ -1,0 +1,53 @@
+/*
+ * 主题变量配置
+ * 定义应用程序的颜色系统和主题配置
+ * 使用说明：
+ * 1. 修改颜色值即可切换主题
+ * 2. 变量名以用途命名，如--文本-强调色
+ */
+
+// ======================
+// 颜色系统
+// ======================
+
+/* 主色调 */
+$primary-color: #006f8b;
+$primary-hover: #0084a5;
+$primary-light: #004d61;
+
+/* 文本颜色 */
+$text-color: #333;
+$text-muted: #666;
+$text-accent: $primary-color;
+
+/* 背景颜色 */
+$bg-primary: #fff;
+$bg-secondary: #f5f5f5;
+
+// ======================
+// 主题配置
+// ======================
+
+/* 暗色主题 */
+.theme-dark {
+  --主色调: $primary-color;
+  --主色调-悬停: $primary-hover;
+  --文本-强调色: $primary-color;
+  --标题-颜色: var(--主色调);
+  --背景-主色: #1a1a1a;
+  --背景-次色: #2d2d2d;
+}
+
+/* 亮色主题 */
+.theme-light {
+  --主色调: $primary-light;
+  --主色调-悬停: $primary-color;
+  --文本-强调色: $primary-light;
+  --标题-颜色: var(--主色调);
+  --背景-主色: $bg-primary;
+  --背景-次色: $bg-secondary;
+}
+
+/* 图表颜色 */
+$graph-main: var(--主色调-悬停);
+$graph-muted: rgba(126, 126, 126, 0.5);
