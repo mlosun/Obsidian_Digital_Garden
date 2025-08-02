@@ -1,136 +1,82 @@
-
-<style>
-/* 浮动控制栏样式 */
-#floating-control {
-    position: fixed;
-    color: var(--link-color);
-    bottom: 1vmax;
-    right: 1vmax;
-    font-size: 24px;
-    z-index: 999999;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 5px;
-}
-
-/* 浮动控制栏中的图标样式 */
-#floating-control .svg-icon,
-#floating-control i {
-    cursor: pointer;
-    height: 24px;
-    width: auto;
-}
-
-/* 主题切换按钮的默认隐藏逻辑 */
-#theme-switch .light,
-#theme-switch .dark,
-#theme-switch .auto {
-    display: none;
-}
-
-/* 根据当前主题显示对应的图标 */
-#theme-switch.light .light {
-    display: inline;
-}
-
-#theme-switch.dark .dark {
-    display: inline;
-}
-
-#theme-switch.auto .auto {
-    display: inline;
-}
-</style>
-
 <aside id="floating-control">
-    <!-- 返回主页按钮 -->
-    <a href="https://www.mlosun.com" target="_blank" title="返回主页">
-        <i icon-name="castle" aria-hidden="true"></i>
+    <!-- 返回首页按钮 -->
+    <a href="https://www.mlosun.com" target="_blank" title="返回首页">
+        <i  icon-name="castle" title="Home" aria-hidden="true"></i>
     </a>
-
     <!-- 查看源码按钮 -->
     <a href="https://github.com/mlosun/Obsidian_Digital_Garden" title="查看源码" target="_blank">
-        <i icon-name="github" aria-hidden="true"></i>
+        <i  icon-name="github" title="GitHub" aria-hidden="true"></i>
     </a>
-
-    <!-- 主题切换按钮 -->
+    <!-- 切换主题按钮 -->
     <span id="theme-switch" title="切换主题">
-        <i class="svg-icon light" icon-name="sun"   aria-hidden="true"></i> 
-        <i class="svg-icon dark"  icon-name="moon"  aria-hidden="true"></i> 
-        <i class="svg-icon auto"  icon-name="sun-moon" aria-hidden="true"></i> 
+        <i class="svg-icon light" icon-name="sun"      aria-hidden="true"></i>
+        <i class="svg-icon dark"  icon-name="moon"     aria-hidden="true"></i>
+        <i class="svg-icon auto"  icon-name="sun-moon" aria-hidden="true"></i>
     </span>
-
     <!-- 发起讨论按钮 -->
-    <a title="发起讨论" id="emailme"
-       href="mailto:mlosun@qq.com?subject=关于《 {{title}} 》& body=正在讨论：{{meta.siteBaseUrl}}{{permalink}}">
-        <i icon-name="mail-plus" aria-hidden="true"></i>
+    <a title="发起讨论" id="emailme" href="mailto:165387666@qq.com?subject=关于「 {{title}}」&body=正在讨论：{{meta.siteBaseUrl}} {{permalink}}">
+        <i  icon-name="mail-plus" aria-hidden="true"></i>
     </a>
 </aside>
 
+    
 <script>
-/* 根据主题设置对应的图标 */
-function setThemeIcon(theme) {
-    let toRemove;   
-    switch (theme) {
-        case 'dark':
-            toRemove = ['auto', 'light'];   // 暗色模式：移除自动和亮色图标
-            break;
-        case 'light':
-            toRemove = ['dark', 'auto'];    // 亮色模式：移除暗色和自动图标
-            break;
-        default:  
-            toRemove = ['light', 'dark'];   // 自动模式：移除亮色和暗色图标
-            break;
+    function setThemeIcon(theme) {
+        let toAdd;
+        switch (theme) {
+            case 'dark':
+                toRemove = ['auto', 'light'];
+                break;
+            case 'light':
+                toAdd = 'fa-adjust';
+                toRemove = ['dark', 'auto'];
+                break;
+            default:
+                toRemove = ['light', 'dark'];
+                break;
+        }
+        document.getElementById('theme-switch').classList.add(theme);
+        document.getElementById('theme-switch').classList.remove(...toRemove);
     }
-    const switcher = document.getElementById('theme-switch');
-    switcher.classList.add(theme);          // 添加当前主题类
-    switcher.classList.remove(...toRemove); // 移除其他主题类
-}
-
-/* 设置页面主题 */
-function setTheme(theme, setIcon) {
-    if (setIcon) setThemeIcon (theme);   // 如果需要，更新图标
-
-    if (theme === 'dark') {
-        document.body.classList.remove('theme-light');
-        document.body.classList.add('theme-dark');
-    } else if (theme === 'light') {
-        document.body.classList.add('theme-light');
-        document.body.classList.remove('theme-dark');
-    } else {
-        // 自动模式：根据系统偏好设置主题
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        setTheme(prefersDark ? 'dark' : 'light', false);
+    function setTheme(theme, setIcon) {
+        if (setIcon) {
+            setThemeIcon(theme);
+        }
+        if (theme == 'dark') {
+            document.body.classList.remove('theme-light');
+            document.body.classList.add('theme-dark');
+        } else if (theme == "light") {
+            document.body.classList.add('theme-light');
+            document.body.classList.remove('theme-dark');
+        } else {
+            theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+            setTheme(theme, false);
+        }
+        
     }
-}
+    let theme = window.localStorage.getItem('site-theme') || "light";
+    setTheme(theme, true);
+    window.theme = theme;
+    window.localStorage.setItem('site-theme', theme);
 
-
-// 初始化主题
-let theme = window.localStorage.getItem('site-theme') || 'auto';
-setTheme(theme, true);      // 设置初始主题
-window.theme = theme;       // 保存当前主题到全局变量
-window.localStorage.setItem('site-theme', theme);
-
-// 监听系统主题变化
-window.matchMedia('(prefers-color-scheme: dark)')
-      .addEventListener('change', () => {
-          const saved = window.localStorage.getItem('site-theme');
-          if (!saved || saved === 'auto') {
-              window.localStorage.setItem('site-theme', 'auto');
-              setTheme('auto', true);
-          }
-      });
-
-// 点击主题切换按钮时切换主题
-document.getElementById('theme-switch').addEventListener('click', () => {
-    let next;
-    if (window.theme === 'auto') next = 'dark';
-    else if (window.theme === 'dark') next = 'light';
-    else next = 'auto';
-
-    setTheme(next, true);
-    window.localStorage.setItem('site-theme', next);
-    window.theme = next;
-});
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(event) {
+        const settings = window.localStorage.getItem('site-theme');
+        if (!settings || settings == "auto") {
+            window.localStorage.setItem('site-theme', "auto");
+            setTheme("auto", true);
+        }
+    });
+    document.getElementById('theme-switch').addEventListener('click', function() {
+        let theme;
+        if (window.theme == 'auto') {
+            theme = "dark";
+        } else if (window.theme == 'dark') {
+            theme = 'light'
+        } else {
+            theme = 'auto';
+        }
+        setTheme(theme, true);
+        window.localStorage.setItem('site-theme', theme);
+        window.theme = theme;
+    })
 </script>
