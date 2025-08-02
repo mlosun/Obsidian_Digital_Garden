@@ -10,42 +10,26 @@ body {
         background-color: var(--background-secondary);
         transition: all 0.3s ease;
 
-        /* 搜索按钮样式 */
+        // 搜索按钮样式
         .search-button {
             margin: 10px 10px 20px;
             min-width: 160px;
         }
 
-        // /* 滚动文件夹区 */
-        // >.folder {
-        //     flex: 1;
-        //     overflow-y: auto;
-        //     overflow-x: hidden;
-        //     padding-right: 10px;
-        // }
-
-        // /* 隐藏无用图标 */
-        // .fa-sticky-note {
-        //     display: none !important;
-        // }
-
-        /* 笔记链接样式 */
-        // 默认样式
+        // 笔记链接默认样式
         .notelink {
             margin-right: 8px;
             border-radius: 10px;
             padding: 5px 0 5px 8px;
         }
-        // 图标样式
+
+        // 笔记链接图标样式
         .notelink img {
             height: 16px;
             width: auto;
         }
 
-        // .notelink a::before {
-        //     margin-right: 2px;
-        // }
-        // 激活样式
+        // 笔记链接激活样式
         .notelink.active-note {
             transform: none;
         }
