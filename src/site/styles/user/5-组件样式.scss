@@ -388,3 +388,33 @@ body {
         text-shadow: unset;  /* 重置文本阴影 */
     }
 }
+
+
+/* 时间戳样式：定义时间戳的布局和外观 */
+body {
+    .timestamps {
+        display: flex;
+        /* 弹性布局 */
+        flex-direction: row;
+        /* 横向排列 */
+        font-size: 0.8em;
+        /* 字体大小 */
+        color: var(--text-muted);
+        /* 文本颜色 */
+        gap: 10px;
+        /* 元素间距 */
+        margin-top: 20px;
+        /* 顶部间距 */
+
+        div {
+            display: flex;
+            /* 子元素弹性布局 */
+            flex-direction: row;
+            /* 横向排列 */
+            gap: 3px;
+            /* 子元素间距 */
+            align-items: center;
+            /* 垂直居中 */
+        }
+    }
+}
