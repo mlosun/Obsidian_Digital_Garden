@@ -1,5 +1,6 @@
-<!-- 浮动控制栏：固定在页面右下角 -->
+
 <style>
+/* 浮动控制栏样式 */
 #floating-control {
     position: fixed;
     color: var(--link-color);
@@ -13,6 +14,7 @@
     gap: 5px;
 }
 
+/* 浮动控制栏中的图标样式 */
 #floating-control .svg-icon,
 #floating-control i {
     cursor: pointer;
@@ -20,12 +22,14 @@
     width: auto;
 }
 
+/* 主题切换按钮的默认隐藏逻辑 */
 #theme-switch .light,
 #theme-switch .dark,
 #theme-switch .auto {
     display: none;
 }
 
+/* 根据当前主题显示对应的图标 */
 #theme-switch.light .light {
     display: inline;
 }
@@ -39,63 +43,54 @@
 }
 </style>
 
-<!-- 浮动控制栏：固定在页面右下角 -->
 <aside id="floating-control">
-    <!-- 1. 返回主页 -->
+    <!-- 返回主页按钮 -->
     <a href="https://www.mlosun.com" target="_blank" title="返回主页">
         <i icon-name="castle" aria-hidden="true"></i>
     </a>
 
-    <!-- 2. 查看源码 -->
+    <!-- 查看源码按钮 -->
     <a href="https://github.com/mlosun/Obsidian_Digital_Garden" title="查看源码" target="_blank">
         <i icon-name="github" aria-hidden="true"></i>
     </a>
 
-    <!-- 3. 主题切换按钮（light / dark / auto） -->
+    <!-- 主题切换按钮 -->
     <span id="theme-switch" title="切换主题">
-        <i class="svg-icon light" icon-name="sun"   aria-hidden="true"></i> <!-- 亮色图标 -->
-        <i class="svg-icon dark"  icon-name="moon"  aria-hidden="true"></i> <!-- 暗色图标 -->
-        <i class="svg-icon auto"  icon-name="sun-moon" aria-hidden="true"></i> <!-- 自动图标 -->
+        <i class="svg-icon light" icon-name="sun"   aria-hidden="true"></i> 
+        <i class="svg-icon dark"  icon-name="moon"  aria-hidden="true"></i> 
+        <i class="svg-icon auto"  icon-name="sun-moon" aria-hidden="true"></i> 
     </span>
 
-    <!-- 4. 一键发邮件（自动填充主题和正文） -->
+    <!-- 发起讨论按钮 -->
     <a title="发起讨论" id="emailme"
-       href="mailto:mlosun@qq.com?subject=关于《{{title}}》&body=正在讨论：{{meta.siteBaseUrl}}{{permalink}}">
+       href="mailto:mlosun@qq.com?subject=关于《 {{title}} 》& body=正在讨论：{{meta.siteBaseUrl}}{{permalink}}">
         <i icon-name="mail-plus" aria-hidden="true"></i>
     </a>
 </aside>
 
 <script>
-/**
- * 根据当前主题值，切换 <span id="theme-switch"> 上的 CSS 类名，
- * 从而决定三个图标中哪一个真正显示。
- * 注：真正隐藏/显示靠的是 CSS，这里只是加/删类名。
- */
+/* 根据主题设置对应的图标 */
 function setThemeIcon(theme) {
-    let toRemove;   // 需要移除的类名数组
+    let toRemove;   
     switch (theme) {
         case 'dark':
-            toRemove = ['auto', 'light'];   // 仅保留 dark
+            toRemove = ['auto', 'light'];   // 暗色模式：移除自动和亮色图标
             break;
         case 'light':
-            toRemove = ['dark', 'auto'];    // 仅保留 light
+            toRemove = ['dark', 'auto'];    // 亮色模式：移除暗色和自动图标
             break;
-        default:  // 'auto'
-            toRemove = ['light', 'dark'];   // 仅保留 auto
+        default:  
+            toRemove = ['light', 'dark'];   // 自动模式：移除亮色和暗色图标
             break;
     }
     const switcher = document.getElementById('theme-switch');
-    switcher.classList.add(theme);          // 把当前主题作为类名加上
-    switcher.classList.remove(...toRemove); // 移除不需要的类名
+    switcher.classList.add(theme);          // 添加当前主题类
+    switcher.classList.remove(...toRemove); // 移除其他主题类
 }
 
-/**
- * 负责把主题真正渲染到页面，同时可选地更新图标。
- * @param {string} theme  取值 'light' | 'dark' | 'auto'
- * @param {boolean} setIcon  是否同时调用 setThemeIcon 更新图标
- */
+/* 设置页面主题 */
 function setTheme(theme, setIcon) {
-    if (setIcon) setThemeIcon(theme);   // 先更新图标
+    if (setIcon) setThemeIcon (theme);   // 如果需要，更新图标
 
     if (theme === 'dark') {
         document.body.classList.remove('theme-light');
@@ -104,21 +99,20 @@ function setTheme(theme, setIcon) {
         document.body.classList.add('theme-light');
         document.body.classList.remove('theme-dark');
     } else {
-        // 当 theme === 'auto'，根据系统配色决定
+        // 自动模式：根据系统偏好设置主题
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         setTheme(prefersDark ? 'dark' : 'light', false);
     }
 }
 
-/* ========== 初始化 & 事件监听 ========== */
 
-// 1. 页面初次加载：读 localStorage，没有就用默认 'auto'
+// 初始化主题
 let theme = window.localStorage.getItem('site-theme') || 'auto';
-setTheme(theme, true);      // 渲染主题 & 图标
-window.theme = theme;       // 暴露到全局，方便后续读取
+setTheme(theme, true);      // 设置初始主题
+window.theme = theme;       // 保存当前主题到全局变量
 window.localStorage.setItem('site-theme', theme);
 
-// 2. 监听系统配色变化（仅当用户选的是 auto 时才生效）
+// 监听系统主题变化
 window.matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change', () => {
           const saved = window.localStorage.getItem('site-theme');
@@ -128,7 +122,7 @@ window.matchMedia('(prefers-color-scheme: dark)')
           }
       });
 
-// 3. 点击图标循环切换：auto -> dark -> light -> auto ...
+// 点击主题切换按钮时切换主题
 document.getElementById('theme-switch').addEventListener('click', () => {
     let next;
     if (window.theme === 'auto') next = 'dark';
