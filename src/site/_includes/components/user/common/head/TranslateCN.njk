@@ -1,8 +1,27 @@
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const titleElement = document.querySelector('.graph-title');
-    if (titleElement && titleElement.textContent.trim() === 'Connected Pages') {
-      titleElement.textContent = '关联图谱';
-    }
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  // 1. 替换 .graph-title 的文本
+  const graphTitle = document.querySelector('.graph-title');
+  if (graphTitle && graphTitle.textContent.trim() === 'Connected Pages') {
+    graphTitle.textContent = '关联图谱';
+  }
+
+  // 2. 替换 label[for="graph-depth"]
+  const depthLabel = document.querySelector('label[for="graph-depth"]');
+  if (depthLabel && depthLabel.textContent.trim() === 'Depth') {
+    depthLabel.textContent = '深度';
+  }
+
+  // 3. 替换 .toc-title 的文本
+  const tocTitle = document.querySelector('.toc-title');
+  if (tocTitle && tocTitle.textContent.trim() === 'On this page') {
+    tocTitle.textContent = '本页目录';
+  }
+
+  // 4. 替换 .backlink-title 的文本
+  const backlinkTitle = document.querySelector('.backlink-title');
+  if (backlinkTitle && backlinkTitle.textContent.trim() === 'Pages mentioning this page') {
+    backlinkTitle.textContent = '反向链接';
+  }
+});
 </script>
