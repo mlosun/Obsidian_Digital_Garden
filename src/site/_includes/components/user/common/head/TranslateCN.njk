@@ -1,27 +1,36 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  // 1. 替换 .graph-title 的文本
+  // 1. Connected Pages → 关联图谱
   const graphTitle = document.querySelector('.graph-title');
   if (graphTitle && graphTitle.textContent.trim() === 'Connected Pages') {
     graphTitle.textContent = '关联图谱';
   }
 
-  // 2. 替换 label[for="graph-depth"]
+  // 2. Depth → 深度
   const depthLabel = document.querySelector('label[for="graph-depth"]');
   if (depthLabel && depthLabel.textContent.trim() === 'Depth') {
     depthLabel.textContent = '深度';
   }
 
-  // 3. 替换 .toc-title 的文本
+  // 3. On this page → 本页目录
   const tocTitle = document.querySelector('.toc-title');
   if (tocTitle && tocTitle.textContent.trim() === 'On this page') {
     tocTitle.textContent = '本页目录';
   }
 
-  // 4. 替换 .backlink-title 的文本
+  // 4. Pages mentioning this page → 反向链接
   const backlinkTitle = document.querySelector('.backlink-title');
   if (backlinkTitle && backlinkTitle.textContent.trim() === 'Pages mentioning this page') {
     backlinkTitle.textContent = '反向链接';
+  }
+
+  // 5. Search → 搜索（不影响快捷键）
+  const searchText = document.querySelector('.search-text');
+  if (searchText) {
+    const firstSpan = searchText.querySelector('span');
+    if (firstSpan && firstSpan.textContent.trim() === 'Search') {
+      firstSpan.textContent = '搜索';
+    }
   }
 });
 </script>
