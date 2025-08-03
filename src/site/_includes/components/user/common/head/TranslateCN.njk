@@ -1,16 +1,8 @@
 <script>
-window.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.published-section-header > span').forEach(el => {
-    switch(el.textContent.trim()) {
-      case 'Connected Pages':
-        el.textContent = '相关页面'; break;
-      case 'Depth':
-        el.textContent = '深度'; break;
-      case 'On this page':
-        el.textContent = '本页内容'; break;
-      case 'Pages mentioning this page':
-        el.textContent = '提到此页面的页面'; break;
+  document.addEventListener("DOMContentLoaded", function() {
+    const titleElement = document.querySelector('.graph-title');
+    if (titleElement && titleElement.textContent.trim() === 'Connected Pages') {
+      titleElement.textContent = '关联图谱';
     }
   });
-});
 </script>
