@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/使用 PicGo 和 Github 搭建图床.md","permalink":"/08 零散笔记/使用 PicGo 和 Github 搭建图床/","title":"使用 PicGo 和 Github 搭建图床","tags":["PicGo","Github","图床"],"noteIcon":"dg-note-icon","created":"2024-09-15","updated":"2024-12-08"}
+{"dg-publish":true,"dg-path":"08 零散笔记/使用 PicGo 和 Github 搭建图床.md","permalink":"/08 零散笔记/使用 PicGo 和 Github 搭建图床/","title":"使用 PicGo 和 Github 搭建图床","tags":["PicGo","Github","图床"],"created":"2024-09-15","updated":"2024-12-08"}
 ---
 
 

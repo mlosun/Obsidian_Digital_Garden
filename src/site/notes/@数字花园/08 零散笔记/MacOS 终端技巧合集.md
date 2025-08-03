@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/MacOS 终端技巧合集.md","permalink":"/08 零散笔记/MacOS 终端技巧合集/","noteIcon":"dg-note-icon","created":"2024-10-27","updated":"2024-12-08"}
+{"dg-publish":true,"dg-path":"08 零散笔记/MacOS 终端技巧合集.md","permalink":"/08 零散笔记/MacOS 终端技巧合集/","created":"2024-10-27","updated":"2024-12-08"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"01 应用手册/使用 MacOS 搭建 Python 的开发环境.md","permalink":"/01 应用手册/使用 MacOS 搭建 Python 的开发环境/","noteIcon":"dg-note-icon","created":"2025-07-28","updated":"2025-07-29"}
+{"dg-publish":true,"dg-path":"01 应用手册/使用 MacOS 搭建 Python 的开发环境.md","permalink":"/01 应用手册/使用 MacOS 搭建 Python 的开发环境/","created":"2025-07-28","updated":"2025-07-29"}
 ---
 
 

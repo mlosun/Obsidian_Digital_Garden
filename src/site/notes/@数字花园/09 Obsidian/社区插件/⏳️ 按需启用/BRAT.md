@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/社区插件/⏳️ 按需启用/BRAT.md","permalink":"/09 Obsidian/社区插件/⏳️ 按需启用/BRAT/","noteIcon":"dg-note-icon","created":"2025-04-06","updated":"2025-07-31"}
+{"dg-publish":true,"dg-path":"09 Obsidian/社区插件/⏳️ 按需启用/BRAT.md","permalink":"/09 Obsidian/社区插件/⏳️ 按需启用/BRAT/","created":"2025-04-06","updated":"2025-07-31"}
 ---
 
 

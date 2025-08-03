@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Dataview queries.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Dataview queries/","noteIcon":"dg-note-icon","created":"2022-11-12T18:28:44.594+01:00","updated":"2023-03-21T17:03:49.624+01:00"}
+{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Dataview queries.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Dataview queries/","created":"2022-11-12T18:28:44.594+01:00","updated":"2023-03-21T17:03:49.624+01:00"}
 ---
 
 

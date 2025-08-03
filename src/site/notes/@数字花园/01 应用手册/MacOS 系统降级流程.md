@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"01 应用手册/MacOS 系统降级流程.md","permalink":"/01 应用手册/MacOS 系统降级流程/","noteIcon":"dg-note-icon","created":"2025-07-28","updated":"2025-07-28"}
+{"dg-publish":true,"dg-path":"01 应用手册/MacOS 系统降级流程.md","permalink":"/01 应用手册/MacOS 系统降级流程/","created":"2025-07-28","updated":"2025-07-28"}
 ---
 
 

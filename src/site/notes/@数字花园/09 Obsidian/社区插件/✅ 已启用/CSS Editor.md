@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/社区插件/✅ 已启用/CSS Editor.md","permalink":"/09 Obsidian/社区插件/✅ 已启用/CSS Editor/","noteIcon":"dg-note-icon","created":"2025-07-31","updated":"2025-07-31"}
+{"dg-publish":true,"dg-path":"09 Obsidian/社区插件/✅ 已启用/CSS Editor.md","permalink":"/09 Obsidian/社区插件/✅ 已启用/CSS Editor/","created":"2025-07-31","updated":"2025-07-31"}
 ---
 
 

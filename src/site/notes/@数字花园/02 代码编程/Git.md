@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"02 代码编程/Git.md","permalink":"/02 代码编程/Git/","noteIcon":"dg-note-icon","created":"2025-05-07","updated":"2025-05-07"}
+{"dg-publish":true,"dg-path":"02 代码编程/Git.md","permalink":"/02 代码编程/Git/","created":"2025-05-07","updated":"2025-05-07"}
 ---
 
 

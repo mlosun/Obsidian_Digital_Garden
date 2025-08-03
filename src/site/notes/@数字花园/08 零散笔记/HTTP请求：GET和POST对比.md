@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/HTTP请求：GET和POST对比.md","permalink":"/08 零散笔记/HTTP请求：GET和POST对比/","noteIcon":"dg-note-icon","created":"2025-05-25","updated":"2025-05-25"}
+{"dg-publish":true,"dg-path":"08 零散笔记/HTTP请求：GET和POST对比.md","permalink":"/08 零散笔记/HTTP请求：GET和POST对比/","created":"2025-05-25","updated":"2025-05-25"}
 ---
 
 

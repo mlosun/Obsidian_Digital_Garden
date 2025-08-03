@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"00 关于本站/Welcome.md","permalink":"/00 关于本站/Welcome/","pinned":true,"tags":["gardenEntry"],"noteIcon":2,"created":"2025-03-20","updated":"2025-08-03"}
+{"dg-publish":true,"dg-path":"00 关于本站/Welcome.md","permalink":"/00 关于本站/Welcome/","pinned":true,"tags":["gardenEntry"],"created":"2025-03-20","updated":"2025-08-03"}
 ---
 
 

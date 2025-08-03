@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"01 应用手册/MTPhotos - 好用的照片管理系统.md","permalink":"/01 应用手册/MTPhotos - 好用的照片管理系统/","noteIcon":"dg-note-icon","created":"2024-12-10","updated":"2025-04-06"}
+{"dg-publish":true,"dg-path":"01 应用手册/MTPhotos - 好用的照片管理系统.md","permalink":"/01 应用手册/MTPhotos - 好用的照片管理系统/","created":"2024-12-10","updated":"2025-04-06"}
 ---
 
 

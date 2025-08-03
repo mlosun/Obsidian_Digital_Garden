@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/社区插件/✅ 已启用/Calendar.md","permalink":"/09 Obsidian/社区插件/✅ 已启用/Calendar/","noteIcon":"dg-note-icon","created":"2025-07-31","updated":"2025-07-31"}
+{"dg-publish":true,"dg-path":"09 Obsidian/社区插件/✅ 已启用/Calendar.md","permalink":"/09 Obsidian/社区插件/✅ 已启用/Calendar/","created":"2025-07-31","updated":"2025-07-31"}
 ---
 
 

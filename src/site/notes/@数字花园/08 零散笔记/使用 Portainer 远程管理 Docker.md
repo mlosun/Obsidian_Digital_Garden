@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/使用 Portainer 远程管理 Docker.md","permalink":"/08 零散笔记/使用 Portainer 远程管理 Docker/","noteIcon":"dg-note-icon","created":"2024-10-08","updated":"2024-12-08"}
+{"dg-publish":true,"dg-path":"08 零散笔记/使用 Portainer 远程管理 Docker.md","permalink":"/08 零散笔记/使用 Portainer 远程管理 Docker/","created":"2024-10-08","updated":"2024-12-08"}
 ---
 
 

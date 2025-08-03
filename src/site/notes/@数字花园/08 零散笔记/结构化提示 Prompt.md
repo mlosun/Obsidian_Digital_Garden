@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"08 零散笔记/结构化提示 Prompt.md","permalink":"/08 零散笔记/结构化提示 Prompt/","noteIcon":"dg-note-icon","created":"2024-03-07","updated":"2024-04-13"}
+{"dg-publish":true,"dg-path":"08 零散笔记/结构化提示 Prompt.md","permalink":"/08 零散笔记/结构化提示 Prompt/","created":"2024-03-07","updated":"2024-04-13"}
 ---
 
 ## 参考资料

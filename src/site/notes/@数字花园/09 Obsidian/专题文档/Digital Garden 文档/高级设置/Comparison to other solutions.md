@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Comparison to other solutions.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Comparison to other solutions/","noteIcon":"dg-note-icon","created":"2022-11-10T10:13:31.101+01:00","updated":"2022-11-21T15:27:31.692+01:00"}
+{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/高级设置/Comparison to other solutions.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/高级设置/Comparison to other solutions/","created":"2022-11-10T10:13:31.101+01:00","updated":"2022-11-21T15:27:31.692+01:00"}
 ---
 
 

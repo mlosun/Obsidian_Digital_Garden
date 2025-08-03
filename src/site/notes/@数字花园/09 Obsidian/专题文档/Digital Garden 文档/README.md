@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/README.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/README/","noteIcon":"dg-note-icon","created":"2025-07-30","updated":"2025-07-30"}
+{"dg-publish":true,"dg-path":"09 Obsidian/专题文档/Digital Garden 文档/README.md","permalink":"/09 Obsidian/专题文档/Digital Garden 文档/README/","created":"2025-07-30","updated":"2025-07-30"}
 ---
 
 
