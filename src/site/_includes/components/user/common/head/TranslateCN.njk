@@ -1,36 +1,17 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  // 1. Connected Pages → 关联图谱
-  const graphTitle = document.querySelector('.graph-title');
-  if (graphTitle && graphTitle.textContent.trim() === 'Connected Pages') {
-    graphTitle.textContent = '关联图谱';
-  }
+  const replacements = [
+    { selector: '.graph-title', text: 'Connected Pages', replacement: '关联图谱' },
+    { selector: 'label[for="graph-depth"]', text: 'Depth', replacement: '深度' },
+    { selector: '.toc-title', text: 'On this page', replacement: '本页目录' },
+    { selector: '.backlink-title', text: 'Pages mentioning this page', replacement: '反向链接' }
+  ];
 
-  // 2. Depth → 深度
-  const depthLabel = document.querySelector('label[for="graph-depth"]');
-  if (depthLabel && depthLabel.textContent.trim() === 'Depth') {
-    depthLabel.textContent = '深度';
-  }
-
-  // 3. On this page → 本页目录
-  const tocTitle = document.querySelector('.toc-title');
-  if (tocTitle && tocTitle.textContent.trim() === 'On this page') {
-    tocTitle.textContent = '本页目录';
-  }
-
-  // 4. Pages mentioning this page → 反向链接
-  const backlinkTitle = document.querySelector('.backlink-title');
-  if (backlinkTitle && backlinkTitle.textContent.trim() === 'Pages mentioning this page') {
-    backlinkTitle.textContent = '反向链接';
-  }
-
-  // 5. Search → 搜索（不影响快捷键）
-  const searchText = document.querySelector('.search-text');
-  if (searchText) {
-    const firstSpan = searchText.querySelector('span');
-    if (firstSpan && firstSpan.textContent.trim() === 'Search') {
-      firstSpan.textContent = '搜索';
+  replacements.forEach(({ selector, text, replacement }) => {
+    const el = document.querySelector(selector);
+    if (el && el.textContent.trim() === text) {
+      el.textContent = replacement;
     }
-  }
+  });
 });
 </script>
