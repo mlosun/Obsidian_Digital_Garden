@@ -1,0 +1,29 @@
+<script>
+(function () {
+  const map = {
+    'Connected Pages': '关联图谱',
+    'Depth': '深度',
+    'On this page': '本页目录',
+    'Pages mentioning this page': '反向链接'
+  };
+
+  function replaceText() {
+    Object.entries(map).forEach(([en, zh]) => {
+      [...document.querySelectorAll('*')].forEach(el => {
+        if (el.childNodes.length === 1 && el.firstChild?.nodeType === 3) {
+          if (el.textContent.trim() === en) {
+            el.textContent = zh;
+          }
+        }
+      });
+    });
+  }
+
+  // 初次替换
+  replaceText();
+
+  // Digital Garden 会局部刷新，监听 DOM 变化
+  const mo = new MutationObserver(() => replaceText());
+  mo.observe(document.body, { childList: true, subtree: true });
+})();
+</script>
