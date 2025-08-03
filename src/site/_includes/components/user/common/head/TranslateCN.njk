@@ -1,29 +1,17 @@
 <script>
-(function () {
-  const map = {
-    'Connected Pages': '关联图谱',
-    'Depth': '深度',
-    'On this page': '本页目录',
-    'Pages mentioning this page': '反向链接'
-  };
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.published-section-header > span').forEach(el => {
+    switch(el.textContent.trim()) {
+      case 'Connected Pages':
+        el.textContent = '相关页面'; break;
+      case 'Depth':
+        el.textContent = '深度'; break;
+      case 'On this page':
+        el.textContent = '本页内容'; break;
+      case 'Pages mentioning this page':
+        el.textContent = '提到此页面的页面'; break;
+    }
+  });
+});
 
-  function replaceText() {
-    Object.entries(map).forEach(([en, zh]) => {
-      [...document.querySelectorAll('*')].forEach(el => {
-        if (el.childNodes.length === 1 && el.firstChild?.nodeType === 3) {
-          if (el.textContent.trim() === en) {
-            el.textContent = zh;
-          }
-        }
-      });
-    });
-  }
-
-  // 初次替换
-  replaceText();
-
-  // Digital Garden 会局部刷新，监听 DOM 变化
-  const mo = new MutationObserver(() => replaceText());
-  mo.observe(document.body, { childList: true, subtree: true });
-})();
 </script>
