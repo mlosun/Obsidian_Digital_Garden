@@ -1,11 +1,4 @@
-@media(hover:hover) {
 
-    .external-link:hover,
-    .markdown-rendered .internal-link.is-unresolved:hover,
-    a:hover {
-        color: var(--link-color);
-    }
-}
 
 body nav.filetree-sidebar {
     position: fixed;
@@ -150,24 +143,10 @@ body .filename {
     max-height: unset;
 }
 
-@media(max-width:1400px) {
-    .sidebar .toc-container {
-        max-height: 320px;
-    }
 
-    .sidebar .backlinks {
-        order: 3;
-    }
-}
 
 .sidebar .backlinks {
     flex: unset;
-}
-
-@media(max-width:600px) {
-    body {
-        --list-indent: 1rem;
-    }
 }
 
 
@@ -180,4 +159,29 @@ body .filename {
 .markdown-rendered table a.internal-link {
     color: #444 !important;
     text-decoration-line: none;
+}
+
+@media(max-width:1400px) {
+    .sidebar .toc-container {
+        max-height: 320px;
+    }
+
+    .sidebar .backlinks {
+        order: 3;
+    }
+}
+
+@media(max-width:600px) {
+    body {
+        --list-indent: 1rem;
+    }
+}
+
+@media(hover:hover) {
+
+    .external-link:hover,
+    .markdown-rendered .internal-link.is-unresolved:hover,
+    a:hover {
+        color: var(--link-color);
+    }
 }
