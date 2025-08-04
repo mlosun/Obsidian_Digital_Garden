@@ -84,9 +84,8 @@
 
 {# 悬浮控制条样式 #}
 <style>
-/* ---------- 悬浮控制条 ---------- */
 #FloatingControl {
-  /* 布局 */
+  {# 布局 #}
   position: fixed;
   bottom: 1vmax;
   right: 1vmax;
@@ -96,12 +95,12 @@
   justify-content: flex-end;
   gap: 5px;
 
-  /* 外观 */
+  {# 外观 #}
   font-size: 24px;
   color: var(--link-color, #0366d6);
 }
 
-/* 所有图标统一尺寸与鼠标手势 */
+{# 所有图标统一尺寸与鼠标手势 #}
 #FloatingControl .svg-icon,
 #FloatingControl i {
   width: auto;
@@ -109,14 +108,14 @@
   cursor: pointer;
 }
 
-/* ---------- 主题图标切换 ---------- */
+{# 主题图标切换 #}
 #theme-switch .light,
 #theme-switch .dark,
 #theme-switch .auto {
   display: none;
 }
 
-/* 显示当前主题对应的图标 */
+{# 显示当前主题对应的图标 #}
 #theme-switch.light .light,
 #theme-switch.dark  .dark,
 #theme-switch.auto  .auto {
