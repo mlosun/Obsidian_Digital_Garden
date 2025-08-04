@@ -290,26 +290,11 @@ body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon=withered]:before {
     }
 }
 
-.table-wrapper table {
-    width: 100%
-}
 
-.table-wrapper tbody ul {
-    margin: 0;
-}
-
-
-.markdown-rendered tbody {
-    font-size: 14px;
-}
 
 .markdown-rendered thead tr>th,
 .markdown-rendered thead tr>th:nth-child(2n+2) {
     background-color: #f8d3a0;
-}
-
-.markdown-rendered table tbody>tr {
-    background-color: #f7e6ce;
 }
 
 .markdown-rendered table a.internal-link {
