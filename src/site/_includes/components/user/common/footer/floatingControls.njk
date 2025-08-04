@@ -2,12 +2,16 @@
 
 <aside id="floating-control">
     {# 返回首页 #}
-    <a href="https://www.mlosun.com" target="_blank" title="返回首页">
-        <i  icon-name="home" title="Home" aria-hidden="true"></i>
+    <a title="返回首页" target="_blank" href="https://www.mlosun.com">
+        <i icon-name="home" title="Home" aria-hidden="true"></i>
     </a>
     {# 查看源码按钮 #}
-    <a href="https://github.com/mlosun/Obsidian_Digital_Garden" title="查看源码" target="_blank">
-        <i  icon-name="github" title="GitHub" aria-hidden="true"></i>
+    <a title="查看源码" target="_blank" href="https://github.com/mlosun/Obsidian_Digital_Garden">
+        <i icon-name="github" title="GitHub" aria-hidden="true"></i>
+    </a>
+    {# 发送邮件按钮 #}
+    <a title="发送邮件" id="emailme" href="mailto:165387666@qq.com">
+        <i icon-name="mail" title="Email" aria-hidden="true"></i>
     </a>
     {# 切换主题按钮 #}
     <span id="theme-switch" title="切换主题">
@@ -15,10 +19,6 @@
         <i class="svg-icon dark"  icon-name="moon"     aria-hidden="true"></i>
         <i class="svg-icon auto"  icon-name="sun-moon" aria-hidden="true"></i>
     </span>
-    {# 发起讨论按钮
-    <a title="发起讨论" id="emailme" href="mailto:165387666@qq.com?subject=关于「 {{title}}」&body=正在讨论：{{meta.siteBaseUrl}} {{permalink}}">
-        <i  icon-name="mail-plus" aria-hidden="true"></i>
-    </a> #}
 </aside>
 
 {# 主题切换脚本 #}
@@ -85,32 +85,39 @@
 
 {# 悬浮控制条样式 #}
 <style>
+/* ---------- 悬浮控制条 ---------- */
 #floating-control {
+  /* 布局 */
   position: fixed;
-  color: var(--link-color, #0366d6);
   bottom: 1vmax;
   right: 1vmax;
-  font-size: 24px;
   z-index: 999999;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 5px;
+
+  /* 外观 */
+  font-size: 24px;
+  color: var(--link-color, #0366d6);
 }
 
+/* 所有图标统一尺寸与鼠标手势 */
 #floating-control .svg-icon,
 #floating-control i {
-  cursor: pointer;
-  height: 24px;
   width: auto;
+  height: 24px;
+  cursor: pointer;
 }
 
+/* ---------- 主题图标切换 ---------- */
 #theme-switch .light,
 #theme-switch .dark,
 #theme-switch .auto {
   display: none;
 }
 
+/* 显示当前主题对应的图标 */
 #theme-switch.light .light,
 #theme-switch.dark  .dark,
 #theme-switch.auto  .auto {
