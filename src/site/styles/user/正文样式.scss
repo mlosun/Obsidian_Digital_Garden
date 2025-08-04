@@ -48,3 +48,22 @@ body {
         padding: 5px 10px !important;
     }
 }
+
+/* ===== 时间戳样式 ===== */
+body {
+    .timestamps {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+        color: var(--text-muted);
+        gap: 10px;
+        margin-top: 20px;
+
+        >div {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            align-items: center;
+        }
+    }
+}
