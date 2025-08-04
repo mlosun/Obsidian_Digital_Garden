@@ -84,33 +84,44 @@
 {# 悬浮控制条样式 #}
 <style>
 #FloatingControl {
+  {# 定位 #}
   position: fixed;
-  bottom: 1vmax;
-  right: 1vmax;
+  inset-block-end: 1vmax;
+  inset-inline-end: 1vmax;
   z-index: 999999;
+
+  {# 布局 #}
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 5px;
+
+  {# 外观 #}
   font-size: 24px;
   color: var(--link-color, #0366d6);
+
+  {# 子元素：图标统一尺寸 #}
+  & svg,
+  & i {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
 }
 
-#FloatingControl svg, #FloatingControl i {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-}
+#theme-switch {
+  {# 默认全部隐藏 #}
+  .light,
+  .dark,
+  .auto {
+    display: none;
+  }
 
-#theme-switch .light,
-#theme-switch .dark,
-#theme-switch .auto {
-  display: none;
-}
-
-#theme-switch.light .light,
-#theme-switch.dark  .dark,
-#theme-switch.auto  .auto {
-  display: inline;
+  {# 状态类控制对应图标显示 #}
+  &.light .light,
+  &.dark  .dark,
+  &.auto  .auto {
+    display: inline;
+  }
 }
 </style>
