@@ -1,0 +1,119 @@
+/* ===== 基础布局结构 ===== */
+body nav.filetree-sidebar {
+    position: fixed;
+    top: 85px;
+    left: 20px;
+    display: flex;
+    overflow-x: hidden;
+    width: 300px;
+    height: calc(100% - 160px);
+    flex-direction: column;
+}
+
+body nav.filetree-sidebar .folder {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-right: -10px;
+    flex: 1;
+}
+
+body nav.toc ol {
+    padding-left: 10px;
+    list-style: none;
+}
+
+body header {
+    margin-bottom: 1.8em;
+}
+
+body .content {
+    max-width: 780px;
+}
+
+body nav.navbar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 55px;
+}
+
+/* ===== 网格/弹性布局 ===== */
+p.grid,
+p.grid-4 {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(auto-fill, 32%);
+}
+
+p.grid-4 {
+    grid-template-columns: repeat(auto-fill, 24%);
+}
+
+.aliases {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.header-tags {
+    display: flex;
+    gap: 5px;
+}
+
+/* ===== 表格布局 ===== */
+.table-wrapper {
+    overflow-x: scroll;
+}
+
+.table-wrapper table {
+    width: 100%;
+}
+
+/* ===== 响应式布局 ===== */
+@media (max-width: 1400px) {
+    .sidebar .toc-container {
+        max-height: 320px;
+    }
+
+    .sidebar .backlinks {
+        order: 3;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        --list-indent: 1rem;
+    }
+}
+
+@media (hover: hover) {
+    /* 悬停时的布局微调 */
+}
+
+/* ===== 特殊布局组件 ===== */
+.fullpage-overlay {
+    position: fixed;
+}
+
+.sidebar .toc-container {
+    max-height: unset;
+}
+
+.sidebar .backlinks {
+    flex: unset;
+}
+
+/* ===== 定位相关 ===== */
+.callout {
+    position: relative;
+}
+
+body .cards table.dataview.table-view-table tbody tr td img.inset-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
