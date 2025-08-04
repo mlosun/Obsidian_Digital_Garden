@@ -1,0 +1,46 @@
+// 标题样式
+body.h1 {
+    font-size: 2em !important;
+
+    /* 40px/16=2.5em */
+    img {
+        height: 32px;
+        width: auto;
+    }
+}
+
+body.h2 {
+    font-size: 1.5em !important;
+    /* 30px/16=1.875em */
+}
+
+body.h3 {
+    font-size: 1.17em !important;
+}
+
+body.h4 {
+    font-size: 1em !important;
+    font-weight: bolder !important;
+}
+body.h5 {
+    font-size: 0.83em !important;
+    font-weight: bolder !important;
+}
+body.h6 {
+    font-size: 0.67em !important;
+    font-weight: bolder !important;
+}
+
+// 表格样式
+body.table {
+    width: 100% !important;
+    border: 1px solid lightgray !important;
+
+    td,th {
+        padding: 5px 10px !important;
+
+        hr {
+            margin: 5px !important;
+        }
+    }
+}
