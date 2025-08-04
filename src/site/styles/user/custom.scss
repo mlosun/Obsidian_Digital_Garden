@@ -50,6 +50,8 @@ body nav.filetree-sidebar h1:before {
     content: " ";
 }
 
+
+
 body nav.toc ol {
     padding-left: 10px;
     border-left: 2px solid var(--background-secondary);
@@ -63,6 +65,8 @@ body nav.toc>ol {
 body header {
     margin-bottom: 1.8em;
 }
+
+
 
 body .content {
     max-width: 780px;
@@ -145,13 +149,6 @@ body .filename {
 
 .sidebar .backlinks {
     flex: unset;
-}
-
-
-
-.markdown-rendered thead tr>th,
-.markdown-rendered thead tr>th:nth-child(2n+2) {
-    background-color: #f8d3a0;
 }
 
 .markdown-rendered table a.internal-link {
