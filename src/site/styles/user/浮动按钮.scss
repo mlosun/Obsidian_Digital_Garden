@@ -1,0 +1,36 @@
+body {
+    #floating-control {
+        /* 固定在右下角 */
+        position: fixed;
+        color: var(--link-color);
+        bottom: 1vmax;
+        right: 1vmax;
+        font-size: 24px;
+        z-index: 999999;
+
+        /* 纵向按钮组 */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 5px;
+
+        /* 图标统一指针 */
+        .svg-icon,
+        i {
+            cursor: pointer;
+            height: 24px;
+            width: auto;
+        }
+
+        /* 主题开关：默认隐藏所有图标，根据外层主题类显示对应图标 */
+        #theme-switch {
+            .light { display: none; }
+            .dark  { display: none; }
+            .auto  { display: none; }
+
+            &.light .light { display: inline; }
+            &.dark  .dark  { display: inline; }
+            &.auto  .auto  { display: inline; }
+        }
+    }
+}
