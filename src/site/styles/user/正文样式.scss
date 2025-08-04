@@ -29,16 +29,9 @@ body {
     table {
         width: 100% !important;
         border: 1px solid lightgray !important;
-    }
-}
 
-
-body.table {
-    td,th {
-        padding: 5px 10px !important;
-
-        hr {
-            margin: 5px !important;
+        th {
+            padding: 5px 10px !important;
         }
     }
 }
