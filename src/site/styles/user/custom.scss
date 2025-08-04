@@ -2,22 +2,6 @@ body {
     --graph-main: var(--text-accent-hover);
     --graph-muted: rgba(126, 126, 126, 0.5);
 
-    .timestamps {
-        display: flex;
-        flex-direction: row;
-        font-size: 0.8em;
-        color: var(--text-muted);
-        gap: 10px;
-        margin-top: 20px;
-
-        div {
-            display: flex;
-            flex-direction: row;
-            gap: 3px;
-            align-items: center;
-        }
-    }
-
     .notelink {
         img {
             height: 16px;
