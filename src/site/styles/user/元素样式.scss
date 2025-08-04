@@ -1,5 +1,5 @@
-// 时间戳
-body.timestamps {
+/* 时间戳整体容器 */
+body .timestamps {
     display: flex;
     flex-direction: row;
     font-size: 0.8em;
@@ -8,7 +8,8 @@ body.timestamps {
     margin-top: 20px;
 }
 
-body.timestamps.div {
+/* 每个日期块（svg + span） */
+body .timestamps>div {
     display: flex;
     flex-direction: row;
     gap: 3px;
