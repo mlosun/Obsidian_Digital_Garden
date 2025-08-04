@@ -134,62 +134,6 @@ body nav.navbar .navbar-inner h1:before {
     content: " ";
 }
 
-body .cards table.dataview {
-    width: var(--table-width);
-}
-
-body .cards td,
-body .cards th {
-    border: none !important;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-body .cards td a.tag,
-body .cards th a.tag {
-    padding: 3px !important;
-}
-
-body .cards table.dataview.table-view-table thead.table-view-thead,
-body .cards table.dataview.table-view-table thead.table-view-thead:before {
-    display: none;
-}
-
-body .cards table.dataview.table-view-table tbody tr {
-    position: relative;
-}
-
-body .cards table.dataview.table-view-table tbody tr td img.inset-cover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0;
-    width: auto;
-    height: 70px;
-}
-
-body .cards-cover-no-border table.dataview.table-view-table tbody tr td:first-child {
-    width: 100%;
-}
-
-body .cards-cover-no-border table.dataview.table-view-table tbody tr td:first-child img {
-    padding: 0;
-}
-
-body .cards-cover-no-border table.dataview.table-view-table tbody tr td:nth-child(2) {
-    min-height: 70px;
-}
-
-body .cards-cover-no-border table.dataview.table-view-table tbody tr td svg {
-    width: 14px;
-    height: auto;
-}
-
-body .cards-title-hide-icons table.dataview.table-view-table tbody tr td:first-child a:before,
-body .cards-title-hide-icons table.dataview.table-view-table tbody tr td:nth-child(2) a:before {
-    display: none;
-}
-
 body code[class*=language-],
 body pre[class*=language-] {
     text-shadow: unset;
@@ -201,70 +145,6 @@ body .filename {
     white-space: nowrap;
 }
 
-body.backlinks-note-icon .backlink[data-note-icon=stone]:before,
-body.filetree-note-icon .filename[data-note-icon=stone]:before,
-body.links-note-icon .internal-link[data-note-icon=stone]:before,
-body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon=stone]:before {
-    background-image: url(/img/stone.svg);
-}
-
-body.backlinks-note-icon .backlink[data-note-icon=signpost]:before,
-body.filetree-note-icon .filename[data-note-icon=signpost]:before,
-body.links-note-icon .internal-link[data-note-icon=signpost]:before,
-body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon=signpost]:before {
-    background-image: url(/img/signpost.svg);
-}
-
-body.backlinks-note-icon .backlink[data-note-icon=withered]:before,
-body.filetree-note-icon .filename[data-note-icon=withered]:before,
-body.links-note-icon .internal-link[data-note-icon=withered]:before,
-body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon=withered]:before {
-    background-image: url(/img/withered.svg);
-}
-
-.align-icon {
-    display: inline-flex;
-    align-items: center;
-}
-
-.pill {
-    padding: var(--tag-padding-y) var(--tag-padding-x);
-    border: var(--tag-border-width) solid var(--tag-border-color);
-    border-radius: var(--tag-radius);
-    background-color: var(--tag-background);
-    color: var(--tag-color);
-    text-decoration: var(--tag-decoration);
-    line-height: 1;
-}
-
-.pill:hover {
-    border: var(--tag-border-width) solid var(--tag-border-color-hover);
-    background-color: var(--tag-background-hover);
-    color: var(--tag-color-hover);
-    text-decoration: var(--tag-decoration-hover);
-}
-
-.aliases {
-    display: flex;
-    margin-top: 20px;
-    color: var(--tag-color);
-    flex-direction: row;
-    gap: 5px;
-    align-items: center;
-}
-
-.aliases .heading:only-child {
-    display: none;
-}
-
-.header-tags {
-    display: flex;
-    gap: 5px;
-}
-
-.fullpage-overlay {
-    position: fixed;
-}
 
 .sidebar .toc-container {
     max-height: unset;
