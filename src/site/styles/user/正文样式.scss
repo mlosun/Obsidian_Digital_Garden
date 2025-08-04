@@ -1,53 +1,50 @@
-/* 标题 h1-h6 样式 */
-body h1 {
-    font-size: 2em !important;
-    font-weight: bolder !important;
+/* ===== 标题样式 ===== */
+body {
+
+    h1 {
+        font-size: 2em !important;
+        font-weight: bolder !important;
+    }
+
+    h2 {
+        font-size: 1.5em !important;
+        font-weight: bolder !important;
+    }
+
+    h3 {
+        font-size: 1.17em !important;
+        font-weight: bolder !important;
+    }
+
+    h4 {
+        font-size: 1em !important;
+        font-weight: bolder !important;
+    }
+
+    h5 {
+        font-size: 0.83em !important;
+        font-weight: bolder !important;
+    }
+
+    h6 {
+        font-size: 0.67em !important;
+        font-weight: bolder !important;
+    }
 }
 
-body h2 {
-    font-size: 1.5em !important;
-    font-weight: bolder !important;
-}
+/* ===== 表格样式 ===== */
+body {
+    table {
+        width: 100% !important;
+        border: 1px solid lightgray !important;
+        border-collapse: collapse;
+    }
 
-body h3 {
-    font-size: 1.17em !important;
-    font-weight: bolder !important;
-}
+    table thead tr th {
+        padding: 8px 12px !important;
+    }
 
-body h4 {
-    font-size: 1em !important;
-    font-weight: bolder !important;
-}
-
-body h5 {
-    font-size: 0.83em !important;
-    font-weight: bolder !important;
-}
-
-body h6 {
-    font-size: 0.67em !important;
-    font-weight: bolder !important;
-}
-
-/* 表格整体样式 */
-body table {
-    width: 100% !important;
-    border: 1px solid lightgray !important;
-    border-collapse: collapse;
-    /* 让边框合并，看起来更整齐 */
-}
-
-/* 标题行（表头）样式 */
-body table thead tr th {
-    padding: 8px 12px !important;
-    background: #f1f1f1;
-    /* 可换成你喜欢的颜色 */
-    font-weight: bold;
-}
-
-/* 普通行（表体）样式 */
-body table tbody tr td {
-    padding: 5px 10px !important;
-    border-top: 1px solid #e0e0e0;
-    /* 给每行之间加一条细线 */
+    table tbody tr td {
+        padding: 5px 10px !important;
+    }
 }
