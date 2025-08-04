@@ -109,19 +109,15 @@
   }
 }
 
-#theme-switch {
-  {# 默认全部隐藏 #}
-  .light,
-  .dark,
-  .auto {
-    display: none;
-  }
+#theme-switch .light,
+#theme-switch .dark,
+#theme-switch .auto {
+  display: none;
+}
 
-  {# 状态类控制对应图标显示 #}
-  &.light .light,
-  &.dark  .dark,
-  &.auto  .auto {
-    display: inline;
-  }
+#theme-switch.light .light,
+#theme-switch.dark  .dark,
+#theme-switch.auto  .auto {
+  display: inline;
 }
 </style>
