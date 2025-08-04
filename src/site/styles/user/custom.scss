@@ -90,20 +90,6 @@ body {
         }
     }
 
-    .sidebar-container {
-        &>div:not(.graph) {
-            width: 320px;
-            max-height: 365px;
-            overflow-y: auto;
-        }
-
-        @media (max-width: 1490px) {
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    }
-
     nav.filetree-sidebar {
         top: 85px;
         left: 20px;
@@ -566,23 +552,6 @@ body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
     position: fixed;
 }
 
-.sidebar {
-    .toc-container {
-        max-height: unset;
-
-        @media (max-width: 1400px) {
-            max-height: 320px;
-        }
-    }
-
-    .backlinks {
-        flex: unset;
-
-        @media (max-width: 1400px) {
-            order: 3;
-        }
-    }
-}
 
 .tool-links {
     display: flex;

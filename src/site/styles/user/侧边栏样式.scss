@@ -1,0 +1,34 @@
+body {
+    .sidebar-container {
+        &>div:not(.graph) {
+            width: 320px;
+            max-height: 365px;
+            overflow-y: auto;
+        }
+
+        @media (max-width: 1490px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+.sidebar {
+    .toc-container {
+        max-height: unset;
+
+        @media (max-width: 1400px) {
+            max-height: 320px;
+        }
+    }
+
+    .backlinks {
+        flex: unset;
+
+        @media (max-width: 1400px) {
+            order: 3;
+        }
+    }
+}
