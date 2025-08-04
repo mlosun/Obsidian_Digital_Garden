@@ -1,34 +1,33 @@
 // 标题样式
-body.h1 {
-    font-size: 2em !important;
+body {
+    h1 {
+        font-size: 2em !important;
+    }
+    h2 {
+        font-size: 1.5em !important;
+    }
+    h3 {
+        font-size: 1.17em !important;
+    }
+    h4 {
+        font-size: 1em !important;
+        font-weight: bolder !important;
+    }
+    h5 {
+        font-size: 0.83em !important;
+        font-weight: bolder !important;
+    }
+    h6 {
+        font-size: 0.67em !important;
+        font-weight: bolder !important;
+    }
+}
 
-    /* 40px/16=2.5em */
+body.h1 {
     img {
         height: 32px;
         width: auto;
     }
-}
-
-body.h2 {
-    font-size: 1.5em !important;
-    /* 30px/16=1.875em */
-}
-
-body.h3 {
-    font-size: 1.17em !important;
-}
-
-body.h4 {
-    font-size: 1em !important;
-    font-weight: bolder !important;
-}
-body.h5 {
-    font-size: 0.83em !important;
-    font-weight: bolder !important;
-}
-body.h6 {
-    font-size: 0.67em !important;
-    font-weight: bolder !important;
 }
 
 // 表格样式
