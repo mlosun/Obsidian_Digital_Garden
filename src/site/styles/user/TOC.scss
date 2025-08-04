@@ -1,12 +1,8 @@
 body nav.toc {
-    ol {
-        list-style: none;
-        padding-left: 10px;
-        border-left: 2px solid var(--background-secondary);
+
+    // 移除标题前的 # 符号
+    li::before {
+        content: "" !important;
     }
 
-    &>ol {
-        padding-left: 0;
-        border-left: none;
-    }
 }
